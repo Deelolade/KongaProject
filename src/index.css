@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Header-section{
+  height: 7vh;
+  background-color:#ED017F;
+  /* justify-content: space-around; */
+}
+.Main-header{
+  text-align: center;
+  background-color:#ED017F;
+  height: 7vh;
+  width: 80vw;
+  justify-content: space-around;
+  display: flex;
+  /* align-items: center; */
+}
+.Logo{
+  line-height: 7vh;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+}
+.Header-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+.Search-input{
+  width: 30vw;
+  height: 30px;
+  border: none;
+  background-color: #ff0;
+  border-radius: 5px;
+  font-size: 12px;
+}
