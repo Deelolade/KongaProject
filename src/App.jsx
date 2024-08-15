@@ -1,9 +1,9 @@
 import React from 'react'
-import Home from './components/Header'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Footer/>
     </div>
   )
 }
