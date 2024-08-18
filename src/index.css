@@ -143,3 +143,54 @@
   width: 35%;
   margin: 0 10px;
 }
+
+
+
+.form-container{
+  margin-top: 30vh;
+  border :3px rgb(43, 43, 243) solid;
+  text-align: center;
+  width: 40vw;
+  border-radius:20px;
+  background-color: rgb(3, 13, 63);
+  margin: auto;
+}
+.form-input{
+  margin:2%;
+  color:  rgb(43, 43, 243);
+}
+.form-profile{
+  margin: 2%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.errors{
+  color: red;
+}
+.submit{
+  background-color: blue;
+  
+}
+.btn{
+  background-color: rgb(2, 55, 95);
+  margin-left: 30px;
+  font-size: 15px;
+  width: 10vh;
+  height: 4vh;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 50px;
+  margin: auto;
+}
+.btn:hover, .submit:hover{
+  color: white;
+  font-size: 10px;
+  transition: .5s ease-in-out;
+  border-bottom-style:  5px red inset ;
+  transform:scale(1.1);
+  
+  
+  
+}
+
