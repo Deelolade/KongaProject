@@ -143,3 +143,83 @@
   width: 35%;
   margin: 0 10px;
 }
+.form-body{
+  background-color: #F2F2F2;
+  height: 100vh;
+  width: 100vw;
+}
+.form-container{
+  /* margin-top: 30vh; */
+  width: 20vw;
+  height: 76vh;
+  border-radius:10px;
+  background-color: #fff;
+  margin: auto;
+}
+.form-image-body{
+  margin: auto;
+  width:15vw;
+  height: 5vh;
+  text-align: center;
+}
+.signup-image{
+  width: 10vw;
+  height: 5vh;
+}
+.form-heading{
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  width: 20vw;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+}
+.form-input{
+  font-size: 14px;
+}
+.errors{
+  color: red;
+  /* font-size: 10px; */
+}
+.submit-button{
+  color: white;
+  height: 35px;
+}  
+.submit-button-text{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.form-input-text {
+  color: #cccccc;
+  text-align: center;
+  font-size: 13px;
+}
+.form-input-text span{
+  color: #cccccc;
+  text-decoration: underline;
+}
+.form-footer{
+  text-align: center;
+}
+.form-footer-text{
+  font-size: 13px;
+  color: #9B9B9B;
+  /* text-align: center; */
+}
+.form-footer-button{
+  border: #ED017F 1px solid;
+  font-size: 15px;
+  color: #ED017F;
+  font-weight: bolder;
+}
+.form-footer-button :hover{
+  color: #fff;
+  background-color: #ED017F;
+}
+  
+  
+
+
+
+
