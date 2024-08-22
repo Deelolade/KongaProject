@@ -2,6 +2,7 @@ import {useForm} from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import Logo from"../Images/pinkKongaLogo.png"
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   const inputstyle ={
@@ -69,7 +70,7 @@ const onSubmit = (data) => {
           <div className="form-footer-text mx-5">
           <p>Already have an account?</p>
           </div>
-          <button className="btn  form-footer-button form-control " type='submit'><h4 className='form-footer-button py-2 rounded-1 '>Login</h4></button>
+          <button className="btn  form-footer-button form-control " type='submit'><h4 className='form-footer-button py-2 rounded-1 '><Link to="/login" className="nav-link" >Login</Link></h4></button>
         </div>
     </div>
   </div>  
