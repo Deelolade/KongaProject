@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <SignUp/>
-      <Footer/>
+      <Home/>
     </div>
   )
 }
