@@ -217,9 +217,76 @@
   color: #fff;
   background-color: #ED017F;
 }
-  
-  
+.login-form-container{
+  width: 20vw;
+  height: 55vh;
+  border-radius:10px;
+  background-color: #fff;
+  margin: auto;
+}
+.form-label-head{
+  text-align: center;
+  width: 20vw;
+}
+.form-label-tab{
+  border: #00f 1px solid;
+  width:9vw ;
+}
+.form-label-tab a{
+  font-size: 12px;
+  text-decoration: none;
+}
+.form-label-logo{
+  font-size: 18px;
+  color: #00f;
+}
+.form-label-logo:hover{
+  color: #595757;
+}
+.login-form-text{
+  text-align: end;
+  color: #A71B62;
+  margin-left: 140px;
+  text-decoration: underline;
 
+}
+.form-section {
+  position: relative;
+  text-align: center;
+  padding: 20px 0; 
+}
 
+.form-section::before {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  width: 100%;
+  height: 1px;
+  background: #9B9B9B;
+  z-index: 1; 
+  opacity: 50%;
+}
 
+.form-section::after {
+  content: 'OR'; 
+  position: absolute;
+  font-size: 12px;
+  left: 50%; 
+  top: 50%; 
+  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #9B9B9B; 
+  border-radius: 50%; 
+  opacity: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+}
 
+.form-section .text {
+  position: relative;
+  display: inline-block;
+  z-index: 2; 
+}
