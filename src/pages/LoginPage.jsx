@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import Logo from"../Images/pinkKongaLogo.png"
 import { FaGoogle } from "react-icons/fa";
 import { GrApple } from "react-icons/gr";
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   const inputstyle ={
@@ -62,7 +63,7 @@ return (
         <div className="form-footer-text mx-5 mt-3">
         <p>Don't have an account?</p>
         </div>
-        <button className="btn  form-footer-button form-control " type='submit' ><h4 className='form-footer-button py-2 rounded-1 '>Create an Account</h4></button>
+        <button className="btn  form-footer-button form-control " type='submit' ><h4 className='form-footer-button py-2 rounded-1 '><Link to="/signup"  className='nav-link' >Create an Account</Link></h4></button>
         </div>
     </div>
 </div>  
