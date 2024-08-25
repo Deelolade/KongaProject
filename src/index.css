@@ -143,3 +143,226 @@
   width: 35%;
   margin: 0 10px;
 }
+.form-body{
+  background-color: #F2F2F2;
+  height: 100vh;
+  width: 100vw;
+}
+.form-container{
+  /* margin-top: 30vh; */
+  width: 20vw;
+  height: 76vh;
+  border-radius:10px;
+  background-color: #fff;
+  margin: auto;
+}
+.form-image-body{
+  margin: auto;
+  width:15vw;
+  height: 5vh;
+  text-align: center;
+}
+.signup-image{
+  width: 10vw;
+  height: 5vh;
+}
+.form-heading{
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  width: 20vw;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+}
+.form-input{
+  font-size: 14px;
+}
+.errors{
+  color: red;
+  /* font-size: 10px; */
+}
+.submit-button{
+  color: white;
+  height: 35px;
+}  
+.submit-button-text{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.form-input-text {
+  color: #cccccc;
+  text-align: center;
+  font-size: 13px;
+}
+.form-input-text span{
+  color: #cccccc;
+  text-decoration: underline;
+}
+.form-footer{
+  text-align: center;
+}
+.form-footer-text{
+  font-size: 13px;
+  color: #9B9B9B;
+  /* text-align: center; */
+}
+.form-footer-button{
+  border: #ED017F 1px solid;
+  font-size: 15px;
+  color: #ED017F;
+  font-weight: bolder;
+}
+.form-footer-button :hover{
+  color: #fff;
+  background-color: #ED017F;
+}
+.login-form-container{
+  width: 20vw;
+  height: 55vh;
+  border-radius:10px;
+  background-color: #fff;
+  margin: auto;
+}
+.form-label-head{
+  text-align: center;
+  width: 20vw;
+}
+.form-label-tab{
+  border: #00f 1px solid;
+  width:9vw ;
+}
+.form-label-tab a{
+  font-size: 12px;
+  text-decoration: none;
+}
+.form-label-logo{
+  font-size: 18px;
+  color: #00f;
+}
+.form-label-logo:hover{
+  color: #595757;
+}
+.login-form-text{
+  text-align: end;
+  color: #A71B62;
+  margin-left: 130px;
+  text-decoration: underline;
+
+}
+.form-section {
+  position: relative;
+  text-align: center;
+  padding: 20px 0; 
+}
+
+.form-section::before {
+  content: ''; 
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  width: 100%;
+  height: 1px;
+  background: #9B9B9B;
+  z-index: 1; 
+  opacity: 50%;
+}
+
+.form-section::after {
+  content: 'OR'; 
+  position: absolute;
+  font-size: 12px;
+  left: 50%; 
+  top: 50%; 
+  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #9B9B9B; 
+  border-radius: 50%; 
+  opacity: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+}
+.form-section .text {
+  position: relative;
+  display: inline-block;
+  z-index: 2; 
+}
+
+
+
+
+
+
+
+
+
+/* ANDRES'S CODE */
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important; 
+  background-color: #f5f4f4 !important; 
+  margin: 7px !important;
+  opacity: 1 !important; 
+}
+
+.carousel-indicators .active {
+  background-color: #000 !important; 
+}
+
+.carousel-control-prev-icon:hover{
+  background-color: #f5f4f4 !important;
+  color: #121111 !important;
+  border-radius: 50% !important;
+  border: #f5f4f4 solid 30px !important;
+}
+
+.carousel-control-next-icon:hover{
+  background-color: #f5f4f4 !important;
+  color: #121111 !important;
+  border-radius: 50% !important;
+  border: #f5f4f4 solid 30px !important;
+}
+
+.todaysDealsHeading{
+  background-color: #94004F;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.todaysDealsHeading .faded-icons {
+  opacity: 0.2;
+  font-size: 1.5rem;
+}
+
+.sameDayDeliveryHeading{
+  background-color: #FFE9E9;
+  position: relative;
+  overflow: hidden;
+}
+
+.sameDayDeliveryHeading button{
+  background-color: #FFDFDD;
+  color: #ED017F;
+}
+
+.sameDayDeliveryHeading button:hover{
+  background-color: #FFDFDD;
+  color: #ED017F;
+}
+
+.seeAllItems:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.seeAllItemsSameDay:hover{
+  border-bottom: 1px solid #8F054D;
+}
+
+.productsShadows:hover{
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  transition: 0.4s ease-in-out;
+}
