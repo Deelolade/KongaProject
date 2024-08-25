@@ -246,7 +246,7 @@
 .login-form-text{
   text-align: end;
   color: #A71B62;
-  margin-left: 140px;
+  margin-left: 130px;
   text-decoration: underline;
 
 }
@@ -284,9 +284,85 @@
   transform: translate(-50%, -50%);
   z-index: 1; 
 }
-
 .form-section .text {
   position: relative;
   display: inline-block;
   z-index: 2; 
+}
+
+
+
+
+
+
+
+
+
+/* ANDRES'S CODE */
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important; 
+  background-color: #f5f4f4 !important; 
+  margin: 7px !important;
+  opacity: 1 !important; 
+}
+
+.carousel-indicators .active {
+  background-color: #000 !important; 
+}
+
+.carousel-control-prev-icon:hover{
+  background-color: #f5f4f4 !important;
+  color: #121111 !important;
+  border-radius: 50% !important;
+  border: #f5f4f4 solid 30px !important;
+}
+
+.carousel-control-next-icon:hover{
+  background-color: #f5f4f4 !important;
+  color: #121111 !important;
+  border-radius: 50% !important;
+  border: #f5f4f4 solid 30px !important;
+}
+
+.todaysDealsHeading{
+  background-color: #94004F;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.todaysDealsHeading .faded-icons {
+  opacity: 0.2;
+  font-size: 1.5rem;
+}
+
+.sameDayDeliveryHeading{
+  background-color: #FFE9E9;
+  position: relative;
+  overflow: hidden;
+}
+
+.sameDayDeliveryHeading button{
+  background-color: #FFDFDD;
+  color: #ED017F;
+}
+
+.sameDayDeliveryHeading button:hover{
+  background-color: #FFDFDD;
+  color: #ED017F;
+}
+
+.seeAllItems:hover{
+  border-bottom: 1px solid #fff;
+}
+
+.seeAllItemsSameDay:hover{
+  border-bottom: 1px solid #8F054D;
+}
+
+.productsShadows:hover{
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  transition: 0.4s ease-in-out;
 }
