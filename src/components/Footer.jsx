@@ -3,6 +3,8 @@ import { FaPhoneAlt,FaInstagram,FaFacebookF  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { GrApple } from "react-icons/gr";
 import { BsAndroid2,BsYoutube,BsTwitterX } from "react-icons/bs";
+
+
 const Footer = () => {
   return (
     <div>

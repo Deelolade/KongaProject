@@ -1,11 +1,24 @@
 import { Link } from 'react-router-dom'
+import PromoCarousel from '../components/PromoCarousel'
+import NavbarFour from '../components/NavbarFour'
+import TodaysDeals from '../components/TodaysDeals'
+import SponsoredProducts from "../components/SponsoredProducts"
+import SameDayDelivery   from '../components/SameDayDelivery'
+import Display from '../components/Display'
 import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <div>
-      <Footer/>
-      <h4 className=' py-2 rounded-1 '><Link to="/login" className="nav-link" >Login</Link></h4>
+      <div style={{maxWidth: '1400px'}} className='mx-auto'>
+      <PromoCarousel/>
+      <NavbarFour/>
+      <TodaysDeals/>
+      <SponsoredProducts/>
+      <SameDayDelivery/>
+      <Display/>
+    </div>
+    <Footer/>
     </div>
   )
 }
