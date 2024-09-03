@@ -12,9 +12,9 @@ import TodaysDealsHp305 from '../images/TodaysDealsHp305.webp'
 import TodaysDealsHp216a from '../images/TodaysDealsHp216a.webp'
 
 const TodaysDeals = () => {
-  return (
+    return (
     <div>
-      <div className='container-fluid mt-5'>
+    <div className='container-fluid mt-5'>
         <div className='todaysDealsHeading rounded-top py-1 text-white d-flex align-items-center justify-content-between'>
         <div className="flex-shrink-0">
             <h4 className="h4 ms-3 fw-bolder fs-2">Today's Deals</h4>
@@ -23,17 +23,17 @@ const TodaysDeals = () => {
             <a href="index.html" className="text-white ms-5 text-decoration-none position-absolute top-0 mt-2 fw-medium seeAllItems" style={{fontSize: '12px'}}>See All Items</a>
         </div>
         <div className="curvedIcons d-none d-md-flex faded-icons flex-grow-1 justify-content-around">
-          <CiMobile1 className='position-absolute start-0' />
-          <BsLaptop />
-          <PiHeadphonesLight/>
-          <PiTShirtLight />
-          <HiOutlineGift />
+        <CiMobile1 className='position-absolute start-0' />
+        <BsLaptop />
+        <PiHeadphonesLight/>
+        <PiTShirtLight />
+        <HiOutlineGift />
 
-          <CiMobile1 />
-          <BsLaptop />
-          <PiHeadphonesLight />
-          <PiTShirtLight />
-          <HiOutlineGift />
+        <CiMobile1 />
+        <BsLaptop />
+        <PiHeadphonesLight />
+        <PiTShirtLight />
+        <HiOutlineGift />
 
           <CiMobile1 />
           <BsLaptop />
