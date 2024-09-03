@@ -11,20 +11,20 @@ import { RiQuestionFill } from "react-icons/ri";
 const Navbar = () => {
   const cartItemCount = 0;
   return (
-    <div >
-        <nav className="navbar navbar-expand-md">
+    <div  className='' style={{backgroundColor:"#ed017f", width:"100vw"}}>
+        <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
   <div className="container-fluid">
-    <Link to='/'><img src={KongaLogo} alt="" /></Link>
+    <Link to='/'><img src={KongaLogo} alt="" className='me-5' /></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
     <ul>
         <li className="nav-item">
-          <Link to='/storelocator' className="nav-link active" aria-current="page">Store Locator</Link>
+          <Link to='/storelocator' className="nav-link active " aria-current="page">Store Locator</Link>
         </li>
         <li className="nav-item">
-          <Link to='/sellonkonga' className="nav-link" >Sell on Konga</Link>
+          <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
         </li>
         </ul>
         <form className="d-flex mx-auto" role="search">
