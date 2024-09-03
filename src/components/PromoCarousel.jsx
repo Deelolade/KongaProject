@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import ClearanceSale from '../images/ClearanceSale.jpeg'
 import ContactUs from '../images/ContactUs.jpeg'
 import HomeEssentials from '../images/HomeEssentials.jpg'
@@ -11,6 +11,9 @@ import BulkDeals from '../images/BulkDeals.jpg'
 import KongaApp from '../images/KongaApp.jpeg'
 
 const PromoCarousel = () => {
+  const CarouselHeight={
+    height:'50vh'
+  }
   return (
     <>
       <div className='container-fluid mt-5'>
@@ -31,22 +34,22 @@ const PromoCarousel = () => {
       
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={ClearanceSale} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={ClearanceSale} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
     <div className="carousel-item">
-      <img src={ContactUs} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={ContactUs} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
     <div className="carousel-item">
-      <img src={HomeEssentials} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={HomeEssentials} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
     <div className="carousel-item">
-      <img src={ItecGens} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={ItecGens} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
     <div className="carousel-item">
-      <img src={IpowerEnergy} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={IpowerEnergy} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
     <div className="carousel-item">
-      <img src={StarlinkSatellite} className="d-block w-100 img-fluid rounded" alt="..."/>
+      <img src={StarlinkSatellite} className="d-block w-100 img-fluid rounded" alt="..." style={CarouselHeight}/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

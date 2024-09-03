@@ -7,9 +7,10 @@ import DisplayMobilePhones from '../images/DisplayMobilePhones.webp'
 import DisplayPower from '../images/DisplayPower.webp'
 
 const Display = () => {
+  
   return (
     <div>
-      <div className='container mt-5'>
+      <div className=' container mt-5' >
         <div className='row shadow py-3 mb-3 rounded'>
             <div className='col-lg-2' role='button'>
                 <img src={DisplayComputing} alt="" className='w-100'/>
