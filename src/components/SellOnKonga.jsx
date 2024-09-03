@@ -14,7 +14,7 @@ const SellOnKonga = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {                 
-        navigate('/form');
+        navigate('/login');
     };
 
   return (
