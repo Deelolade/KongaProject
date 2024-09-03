@@ -14,12 +14,12 @@ const SellOnKonga = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {                 
-        navigate('/form');
+        navigate('/login');
     };
 
   return (
     <>
-  <div className="overall-container mt-3 mx-auto " style={{background:'#f2f2f2', }}>
+  <div className="overall-container mt-5 mx-auto" style={{background:'#f2f2f2', }}>
      <div className="sales-header mb-5 shadowed-2 bg-white" >
          <div className="sales-header-content py-3 mx-auto "style={{background:'#fff',maxWidth:"1440px",}}>
          <h1 style={{fontSize:"45px",fontWeight:"bolder"}}>Sell On Konga</h1>
@@ -27,7 +27,7 @@ const SellOnKonga = () => {
       </div>
     
     
-        <div className="moblie mt-3" style={{background:'#fff', margin:'auto', width:'1440px',}} >
+        <div className="mobile mt-3" style={{background:'#fff', margin:'auto', width:'1440px',}} >
         <div className='sale-container d-flex'>
             <img src={kongaSell} alt="" height={300} className="m-3" />
             <div className='sale-text-contaner p-5 mt-5'>
@@ -81,7 +81,7 @@ const SellOnKonga = () => {
           </div>
           </div>
 
-      <div className="earn-money-container d-flex mb-5  mx-auto"style={{ background:'#fff', width:'1440px', height:'200px'}}>
+      <div className="earn-money-container d-flex mx-auto"style={{ background:'#fff', width:'1440px', height:'220px'}}>
       <div className="earn-money m-5 p-3 ">
       <h1 style={{fontSize:"45px",fontWeight:"bolder"}}>Earn Money, Hassle Free</h1>
             <button className="register-button rounded-1" onClick={handleClick}>
