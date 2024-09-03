@@ -5,7 +5,8 @@ import TodaysDeals from '../components/TodaysDeals'
 import SponsoredProducts from "../components/SponsoredProducts"
 import SameDayDelivery   from '../components/SameDayDelivery'
 import Display from '../components/Display'
-import Footer from '../components/Footer'
+import Store from '../components/Store'
+
 
 const Home = () => {
   return (
@@ -17,8 +18,10 @@ const Home = () => {
       <SponsoredProducts/>
       <SameDayDelivery/>
       <Display/>
+      <Store/>
     </div>
-    <Footer/>
+    
+
     </div>
   )
 }
