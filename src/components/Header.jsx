@@ -4,7 +4,7 @@ import NavbarTwo from './navbarTwo'
 
 const Header = () => {
   return (
-    <div className='fixed-t' >
+    <div className='sticky-top' >
         <Navbar/>
         <NavbarTwo/>
     </div>
