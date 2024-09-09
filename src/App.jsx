@@ -22,8 +22,7 @@ const App = () => {
             <Route path='/storelocator' element = {<StoreLocator/>} />
             <Route path='/sellonkonga' element = {<Sellonkonga/>} />
           </Routes>
-          {/* <Sellonkonga/> */}
-      {/* <SingleProduct/> */}
+          {/* <SingleProduct/> */}
       <Footer/>
       </Router>
       

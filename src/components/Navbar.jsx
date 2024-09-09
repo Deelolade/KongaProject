@@ -11,7 +11,7 @@ import { RiQuestionFill } from "react-icons/ri";
 const Navbar = () => {
   const cartItemCount = 0;
   return (
-    <div  className='' style={{backgroundColor:"#ed017f", width:"100vw"}}>
+    <div  className=' ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
   <div className="container-fluid">
     <Link to='/'><img src={KongaLogo} alt="" className='me-5' /></Link>

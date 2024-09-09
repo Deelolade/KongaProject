@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Navbar2 from './Navbar2'
+import NavbarTwo from './navbarTwo'
 
 const Header = () => {
   return (
-    <div>
+    <div className='fixed-t' >
         <Navbar/>
-        <Navbar2/>
-      
+        <NavbarTwo/>
     </div>
   )
 }

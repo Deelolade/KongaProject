@@ -8,8 +8,8 @@ import { BsAndroid2,BsYoutube,BsTwitterX } from "react-icons/bs";
 const Footer = () => {
   return (
     <div>
-    <div className="Footer-top text-light  ">  
-      <div className="Footer-top-main mt-5 text-light d-flex ">
+    <div className="Footer-top text-light">  
+      <div className="Footer-top-main mt-5 text-light d-flex " style={{maxWidth:"1440px"}}>
         <div className="Footer-top-logo mt-4 ">
         <IoMdMail />
         </div>
