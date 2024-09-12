@@ -7,11 +7,20 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import StoreLocator from './components/StoreLocator'
 import Sellonkonga from './components/SellOnKonga'
+import { createContext,useState } from 'react'
+
+
+
+
+export const CartContext = createContext();
 
 
 const App = () => {
+  const [count,setCount] =useState(0)
   return (
-    <div>
+
+    
+      <CartContext.Provider value={{count, setCount}}>
       <Router>
         <Header/>
           <Routes>
@@ -22,12 +31,12 @@ const App = () => {
             <Route path='/storelocator' element = {<StoreLocator/>} />
             <Route path='/sellonkonga' element = {<Sellonkonga/>} />
           </Routes>
-          {/* <SingleProduct/> */}
+          <SingleProduct/>
       <Footer/>
       </Router>
-      
-      
-    </div>
+
+    </CartContext.Provider>
+    
   )
 }
 

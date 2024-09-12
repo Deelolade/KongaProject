@@ -12,7 +12,7 @@ const navbarTwo = () => {
     const [Fashion, setFashion] = useState(false);
     return (
     <div>
-        <nav className='NavbarTwo '>
+        <nav className='NavbarTwo  container-fluid'>
             <ul className='d-flex  NavbarTwo-main ' >
                 <li><a href="" className='NavbarTwo-main-list fw-bolder'>  All Categories< GiHamburgerMenu className="NavbarTwo-icon ms-2 text-light" /> </a></li>
                 <li><a href="" className='NavbarTwo-main-list'onMouseEnter={()=> setComputers(true)} onMouseLeave={() => setComputers(false)} >Computer and Accessories</a>

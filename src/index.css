@@ -802,6 +802,15 @@
 .NavbarTwo-mini-item-text{
   margin-left: 4vw;
 }
+.product-package-button{
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  background-color: #fff;
+  border: #9B9B9B 1px solid;
+}
 
 
 

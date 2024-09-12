@@ -1,20 +1,57 @@
 import React from 'react'
-import image from '../Images/SameDayHp305.webp'
+import { useState } from 'react';
+// import image from '../Images/SameDayHp305.webp'
 import { RiTruckLine } from "react-icons/ri";
 import { RiShieldStarLine } from "react-icons/ri";
 import { BsArrowRepeat } from "react-icons/bs";
 // import { Link } from 'react-router-dom'
+import data from '../Api/products';
+import image from '../Images/Api-images/HP.png'
 
 const SingleProduct = () => {
+  const [products, setProducts] = useState(data)
+
+  // const [count,setCount] =useState(0)
+  //   const increment = () =>{
+  //       setCount(count + 1)
+  //   }
+  //   const decrement = () =>{
+  //       if(count >0)
+  //           {setCount(count - 1)}
+  //   }
+    
+
+
+
+    const render = products.map((product,idx)=>{
+      return(
+        <div key={idx} className='' >
+          <h1>{product.id}</h1>
+          <img src={product.imageUrl} alt="" />
+          <h1>{product.nameOfProduct}</h1>
+          <h1>{product.price}</h1> 
+          <h1>{product.category}</h1> 
+          <h1>{product.description}</h1>
+
+          </div>
+
+      )
+
+  })
   return (
-    <div className="Single-product mx-auto">
+    <div className="Single-product mx-auto container-fluid">
         <div  className='main-product mx-auto d-flex'>
         <div className="main-single-product my-5 mx-2 d-flex row " >
         <div className="product-image">
         <img src={image} alt="" width="300"/>
         </div>
-        <div className="product-package">
-
+        <div className="product-package container">
+          <div className="product-counter d-flex m-4">
+          <p>Quantity:</p>
+          <button className="product-package-button" >+</button>
+          {/* <p className="product-package-button" >{count}</p> */}
+          <button  className="product-package-button">-</button>
+          </div>
         </div>
         </div>
         <div className="side-product my-5 mx-3 ms-2">
@@ -68,8 +105,8 @@ const SingleProduct = () => {
         </div>
     </div>
     
-    <div className="bottom-product mx-auto p-5 shadow-sm">
-            
+    <div className="bottom-product mx-auto p-5 shadow-sm bg-info">
+    {render}
     </div>
     </div>
   )

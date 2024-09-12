@@ -21,7 +21,7 @@ import ads from '../Images/KidSpecial.jpg'
 
 const Store = () => {
   return (
-    <div className='store-body m-3'>
+    <div className='store-body m-3 container'>
       <div className='store-header '>
         <h3 className='text-center py-2 font-weight-bold store-header-text'>Official Store</h3>
       </div>
@@ -108,7 +108,7 @@ const Store = () => {
         </div>
       </div>
 
-      <div className='store-ads-container' >
+      <div className='store-ads-container container' >
       < img  src={ads} alt=""  style={{maxWidth:"1400px"}}/>
       </div>
     </div>

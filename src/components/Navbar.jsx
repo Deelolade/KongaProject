@@ -1,17 +1,19 @@
-import React from 'react'
 import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from "react-icons/ai";
 import KongaLogo from '../Images/KongaLogo.png'
 import { MdShoppingCart } from "react-icons/md"
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiQuestionFill } from "react-icons/ri";
-
+import { useContext } from 'react';
+import { CartContext } from '../App';
+import { useState } from 'react';
 
 
 const Navbar = () => {
-  const cartItemCount = 0;
+  const {count} =useContext(CartContext)
+  const cartItemCount = 100;
   return (
-    <div  className=' ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
+    <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
   <div className="container-fluid">
     <Link to='/'><img src={KongaLogo} alt="" className='me-5' /></Link>
@@ -51,10 +53,10 @@ const Navbar = () => {
         </li>
         </ul>
 
-        <Link to="#" className="nav-link d-flex align-items-center position-relative" style={{backgroundColor:'#2D9E6D',color:'white',padding:'.2rem'  }}>
+        <Link to="#" className="nav-link d-flex align-items-center position-relative rounded-1" style={{backgroundColor:'#2D9E6D',color:'white',padding:'.6rem .4rem'  }}>
               <FaShoppingCart size={20} />
               <span className="ms-1">My Cart</span>
-              <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em',color:'black'}}>
+              <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem',color:'black'}}>
                 {cartItemCount}
               </span>
             </Link>
