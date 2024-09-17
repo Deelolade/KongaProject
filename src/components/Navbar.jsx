@@ -4,14 +4,13 @@ import KongaLogo from '../Images/KongaLogo.png'
 import { MdShoppingCart } from "react-icons/md"
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiQuestionFill } from "react-icons/ri";
+import { useState } from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../App';
-import { useState } from 'react';
 
 
 const Navbar = () => {
-  const {count} =useContext(CartContext)
-  const cartItemCount = 100;
+  const {count, setCount} =useContext(CartContext)
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
@@ -57,7 +56,7 @@ const Navbar = () => {
               <FaShoppingCart size={20} />
               <span className="ms-1">My Cart</span>
               <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem',color:'black'}}>
-                {cartItemCount}
+                {count}
               </span>
             </Link>
     </div>

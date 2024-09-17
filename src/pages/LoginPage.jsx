@@ -32,10 +32,10 @@ return (
         <form action="" className='form mt-3 px-3 py-4 border border-1' onSubmit = {handleSubmit(onSubmit)}>
             <div className='form-label-head d-flex '>
                 <div className="form-label-tab py-2 rounded-1 ">
-                    <a href='https://google.com'> <span className='form-label-logo me-1'><FaGoogle /></span>Login with Google</a>
+                    <a href='https://google.com' target='_blank'> <span className='form-label-logo me-1'><FaGoogle /></span>Login with Google</a>
                 </div>
                 <div className="form-label-tab py-2  rounded-1">
-                    <a href='https://apple.com'> <span className='form-label-logo me-1'><GrApple /></span> Login with Apple</a>
+                    <a href='https://apple.com' target="_blank"> <span className='form-label-logo me-1'><GrApple /></span> Login with Apple</a>
                 </div>
             </div>
             <div className="form-section mt-3 ">
