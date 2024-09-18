@@ -7,13 +7,11 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineStar } from "react-icons/md";
 import { FaTruckFast } from "react-icons/fa6";
-import data from '../Api/products';
+import data from '../../Api/products';
 import { MdOutlineStarHalf } from "react-icons/md";
 import { useState } from 'react';
 import { useContext } from 'react';
-import { CartContext } from '../App';
-// import { useCart } from './CartContext';
-// import { useNavigate } from 'react-router-dom';
+import { CartContext } from '../../App';
 
 
 
@@ -30,9 +28,8 @@ const SingleProduct = () => {
         if(count >0)
             {setCount(count - 1)}
     }
-   
     
-    const cartDisplay = products.find(product => product.id === 1);
+    const cartDisplay = products.find(product => product.id === 16);
     
 
   return (

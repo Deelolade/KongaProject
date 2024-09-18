@@ -59,10 +59,10 @@ const productCat = [
     
     {id:9,
     imageUrl:"src/Images/Api-images/Iphone15.png",
-    nameOfProduct:"Iphone15",
+    nameOfProduct:"Apple iPhone 15 Pro",
     category:"Phone and Tablet",
     price:"₦1,796,500",
-    description:"Apple iPhone 15 Pro 128GB White Titanium"},
+    description:" 128GB White Titanium"},
                                     
     {id:10,
     imageUrl:"src/Images/Api-images/Samsung.png",
@@ -126,7 +126,7 @@ const productCat = [
         nameOfProduct:"Samsung tv",
         category:"Electronics",
         price:"₦511,800",
-        description:"Product image thumbnail.Product image thumbnail.Product image thumbnail.Samsung Ua43t5300auxke Samsung 43” Full Hd Smart Tv"},
+        description:"Samsung Ua43t5300 aux  43” Full Hd Smart Tv"},
 
         {id:19,
         imageUrl:"src/Images/Api-images/Hisense woofer.png",
@@ -141,9 +141,6 @@ const productCat = [
         category:"Electronics",
         price:"₦840,000",
         description:"Insta Natural Ace Pro - Waterproof Action Camera Co-engineered With Leica, Flagship 1/1.3 Sens"},
-
-
-    
         {
         id:21,
         imageUrl:"src/Images/Api-images/Bluetooth.png",
@@ -155,7 +152,7 @@ const productCat = [
 
         {id:22,
         imageUrl:"src/Images/Api-images/Mic.png",
-        nameOfProduct:"wireless Mic",
+        nameOfProduct:"Wireless Mic",
         category:"Electronics",
         price:"₦20,000",
         description:"K9 Wireless Lapel Microphone"},
