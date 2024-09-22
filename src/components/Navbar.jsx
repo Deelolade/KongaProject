@@ -4,13 +4,12 @@ import KongaLogo from '../Images/KongaLogo.png'
 import { MdShoppingCart } from "react-icons/md"
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiQuestionFill } from "react-icons/ri";
+import { useCart } from '../components/ContextProvider'; 
 import { useState } from 'react';
-import { useContext } from 'react';
-import { CartContext } from '../App';
 
 
 const Navbar = () => {
-  const {count, setCount} =useContext(CartContext)
+  const { counterValue } = useCart();
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
@@ -29,7 +28,7 @@ const Navbar = () => {
         </li>
         </ul>
         <form className="d-flex mx-auto" role="search">
-        <input className="form-control" type="search" placeholder="Search for products,brands and categories..." aria-label="Search"/>
+        <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search"/>
         <button type="submit"><AiOutlineSearch /> </button>
       </form>
 
@@ -52,13 +51,13 @@ const Navbar = () => {
         </li>
         </ul>
 
-        <Link to="#" className="nav-link d-flex align-items-center position-relative rounded-1" style={{backgroundColor:'#2D9E6D',color:'white',padding:'.6rem .4rem'  }}>
+        <span className='cart-icon'><Link to="/shoppingcart" className="nav-link d-flex align-items-center position-relative rounded-1 cart-icon" style={{backgroundColor:'#2D9E6D',color:'white',padding:'.6rem .4rem'  }}>
               <FaShoppingCart size={20} />
               <span className="ms-1">My Cart</span>
               <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem',color:'black'}}>
-                {count}
+                {counterValue}
               </span>
-            </Link>
+            </Link></span>
     </div>
   </div>
 </nav>

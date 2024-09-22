@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 
 const StoreLocator = () => {
   const [selectedState, setSelectedState] = useState('');
@@ -35,6 +38,7 @@ const StoreLocator = () => {
   };
   return (
     <>
+    <Header />
     <div className="header-container">
     <div className="store-header">
         <div className="store-header-content">
@@ -73,10 +77,11 @@ const StoreLocator = () => {
                 </button>
             </form>
         </div>
-        <div className='' style={{ margin: 'auto', height:'25px', alignItems:'center', background:'grey', width:'1000px'}}>
+        <div className='' style={{ margin: 'auto', height:'25px', alignItems:'center', background:'grey', width:'1000px',marginBottom:"24vh"}}>
             <p>There are 29 Konga store</p>
         </div>
         </div>
+        <Footer />
     </>
   )
 }

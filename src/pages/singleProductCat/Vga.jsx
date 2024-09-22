@@ -7,30 +7,18 @@ import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineStar } from "react-icons/md";
 import { FaTruckFast } from "react-icons/fa6";
-import data from '../../Api/products';
 import { MdOutlineStarHalf } from "react-icons/md";
+import { Link } from "react-router-dom";
 import { useState } from 'react';
-import { useContext } from 'react';
-import { CartContext } from '../../App';
+import { useNavigate } from 'react-router-dom';
+import { useCart } from "../../components/ContextProvider";
 
-
-
-
-
-const SingleProduct = () => {
-  const {count, setCount} = useContext(CartContext)
+const Vga = () => {
+  const { data,cartCounter,increment,decrement,handleAddToCart } = useCart();
+  const navigate = useNavigate();
   const [products, setProducts] = useState(data)
 
-    const increment = () =>{
-        setCount(count + 1)
-    }
-    const decrement = () =>{
-        if(count >0)
-            {setCount(count - 1)}
-    }
-    
     const cartDisplay = products.find(product => product.id === 4);
-    
 
   return (
     <div className="Single-product mx-auto container-fluid">
@@ -48,11 +36,13 @@ const SingleProduct = () => {
         <hr className="my-1  side-product-rule" />
         <h1 className="my-4 fw-bold">{cartDisplay.price}</h1>
         <hr className="my-1  side-product-rule"  />
-          <div className="product-counter d-flex  mt-5">
+        <div className="product-counter d-flex  mt-5">
           <p className="me-3 ">Quantity: </p>
-          <button  className="product-package-button fs-2 pb-1" onClick={decrement}>-</button>
-          <p className="product-package-button px-3" >{count}</p>
-          <button className="product-package-button fs-4 pb-1" onClick={increment} >+</button>
+          <div className="product-count d-flex">
+          <button className="product-package-button fs-2 pb-1" onClick={decrement} >-</button>
+          <span className="product-package-count px-3" style={{color:"#000"}} >{cartCounter}</span>
+          <button  className="product-package-button fs-4 pb-1" onClick={increment}>+</button>
+          </div>
           </div>
           <div className="product-counter-number px-4 pb-1 pt-1 mb-3" style={{ backgroundColor:"#FEF2F9",width:"13rem", fontSize:"12px",  borderRadius: "5px"}}>
             <p className="mb-1 ">Call us for Bulk Purchases:</p>
@@ -60,7 +50,7 @@ const SingleProduct = () => {
           </div>
           <hr className="my-1  side-product-rule"  />
           <div className="d-flex my-5">
-            <button className="bg-success single-product-add-button me-5" type="submit" onClick={increment} >Add To Cart</button>
+            <button className="bg-success single-product-add-button me-5" type="submit" onClick={ handleAddToCart } >Add To Cart</button>
             <div className="d-flex">
               <div className="addToCart-love-button me-3">
             <IoMdHeart className=" addToCart-button mt-2 " />
@@ -207,4 +197,4 @@ const SingleProduct = () => {
   )
 }
 
-export default SingleProduct
+export default Vga

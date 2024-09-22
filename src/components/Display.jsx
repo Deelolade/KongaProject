@@ -10,7 +10,7 @@ const Display = () => {
   
   return (
     <div>
-      <div className=' container mt-5' >
+      <div className=' container mt-5 ms-3 mb-2 ' style={{width:"1400px"}} >
         <div className='row shadow py-3 mb-3 rounded'>
             <div className='col-lg-2' role='button'>
                 <img src={DisplayComputing} alt="" className='w-100'/>

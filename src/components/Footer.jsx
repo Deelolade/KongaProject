@@ -2,13 +2,14 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { FaPhoneAlt,FaInstagram,FaFacebookF  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { GrApple } from "react-icons/gr";
+import { Link } from "react-router-dom";
 import { BsAndroid2,BsYoutube,BsTwitterX } from "react-icons/bs";
 
 
 const Footer = () => {
   return (
     <div>
-    <div className="Footer-top text-light">  
+    <div className="Footer-top text-light ">  
       <div className="Footer-top-main mt-5 text-light d-flex " style={{maxWidth:"1440px"}}>
         <div className="Footer-top-logo mt-4 ">
         <IoMdMail />
@@ -39,7 +40,7 @@ const Footer = () => {
     </div>
     <div className="Footer-bottom d-flex">
       
-    <div className="Footer-main-bottom p-3 mt-3  ">
+    <div className="Footer-main-bottom py-3 px-5 mt-3  ">
         <div className="d-flex Footer-list">
             <div className='col'>
               <ul className='list-unstyled '>
@@ -77,7 +78,7 @@ const Footer = () => {
               <ul className='Footer-bottom-list list-unstyled'>
                 <li><a href="#" className='Footer-bottom-head'><h4>More info</h4></a></li>
                 <li><a href="#" >Site Map</a></li>
-                <li><a href="#" >Track My Order</a></li>
+                <li><Link to='/track' >Track My Order</Link></li>
                 <li><a href="#" >Privacy Policy</a></li>
                 <li><a href="#" >Authentic Items Policy</a></li>
               </ul>

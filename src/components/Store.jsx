@@ -21,12 +21,12 @@ import ads from '../Images/KidSpecial.jpg'
 
 const Store = () => {
   return (
-    <div className='store-body m-3 container'>
-      <div className='store-header '>
-        <h3 className='text-center py-2 font-weight-bold store-header-text'>Official Store</h3>
+    <div className='store-body m-3 container ' style={{width:"1440px"}}>
+      <div className='store-header #F5A623 '>
+        <h3 className='text-center py-2 ps-3 fw-bold store-header-text'>Official Store</h3>
       </div>
       <div className='store-prop-container'>
-        <div className='row g-2 my-3 mx-1 text-center '>
+        <div className='row g-2 my-3 mx-1 text-center p-2 shadow'>
         <div className=' Store-image col-md-2 col-3 '>
         < img  src={imageOne} alt=""  />
         </div>
@@ -50,10 +50,6 @@ const Store = () => {
         <div className='Store-image col-md-2 col-3'>
         < img  src={imageSix} alt=""  />
         </div>
-
-        
-
-    
         <div className= 'Store-image col-md-2 col-3'>
         < img  src={imageSeven} alt=""  />
         </div>
@@ -77,11 +73,7 @@ const Store = () => {
         <div className=' Store-image col-md-2 col-3'>
         < img  src={imageTwelve} alt=""  />
         </div>
-
-
-
-
-        <div className=' Store-image col-md-2 col-3'>
+        <div className=' Store-image col-md-2 col-3 '>
         < img  src={imageThirteen} alt=""  />
         </div>
 
@@ -108,8 +100,8 @@ const Store = () => {
         </div>
       </div>
 
-      <div className='store-ads-container container' >
-      < img  src={ads} alt=""  style={{maxWidth:"1400px"}}/>
+      <div className='store-ads-container container p-2 shadow' >
+      < img  src={ads} alt=""  style={{width:"1280px"}}/>
       </div>
     </div>
   )

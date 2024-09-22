@@ -7,6 +7,8 @@ import safeguard from "../images/safeguard.webp"
 import kongaSell from "../images/sell-on-konga.webp"
 import sellElectronics from "../Images/sellElectronics.png"
 import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 
@@ -19,6 +21,7 @@ const SellOnKonga = () => {
 
   return (
     <>
+    <Header />
   <div className="overall-container mt-5 mx-auto" style={{background:'#f2f2f2', }}>
      <div className="sales-header mb-5 shadowed-2 bg-white" >
          <div className="sales-header-content py-3 mx-auto "style={{background:'#fff',maxWidth:"1440px",}}>
@@ -93,6 +96,7 @@ const SellOnKonga = () => {
       </div>
       </div>
   </div>
+  <Footer />
   </>
   )
 }

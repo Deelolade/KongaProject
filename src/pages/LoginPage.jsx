@@ -7,23 +7,24 @@ import { GrApple } from "react-icons/gr";
 import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
-  const inputstyle ={
-    color: "#000",
-    fontSize: "13px",
-    border:"1px solid #9b9b9b"
-  }
-  const ValidationSchema = yup.object().shape({
-    emailAndNumber: yup.string().required("Please fill out this field").matches(/^\d{11,}$/, "This input is Invalid"),
-    password: yup.string().required("Please fill out this field").min(4).max(20),
-})
-const { register,handleSubmit, formState:{ errors }} = useForm({
-    resolver: yupResolver(ValidationSchema)
-})
-const onSubmit = (data) => {
-    console.log(data)
-}
-return (
-    <div className='login-form-body  pt-3  '>
+    const inputstyle ={
+        color: "#000",
+        fontSize: "13px",
+        border:"1px solid #9b9b9b"
+    }
+    const ValidationSchema = yup.object().shape({
+        emailAndNumber: yup.string().required("Please fill out this field").matches(/^\d{11,}$/, "This input is Invalid"),
+        password: yup.string().required("Please fill out this field").min(4).max(20),
+    })
+    const { register,handleSubmit, formState:{ errors }} = useForm({
+        resolver: yupResolver(ValidationSchema)
+    })
+    const onSubmit = (data) => {
+        console.log(data)
+    }
+    return (
+        
+        <div className='login-form-body  pt-3   '>
         <div className='form-image-body my-2'>
         <img src={Logo} alt="Konga Logo" className='signup-image ' />
         </div>
@@ -67,7 +68,8 @@ return (
         </div>
     </div>
 </div>  
-)
+
+       )
 }
 
 export default LoginPage

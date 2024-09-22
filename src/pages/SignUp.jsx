@@ -24,7 +24,7 @@ const onSubmit = (data) => {
     console.log(data)
 }
   return (
-    <div className='form-body  pt-3  '>
+    <div className='form-body  pt-3 mb-0  '>
         <div className='form-image-body my-2'>
         <img src={Logo} alt="Konga Logo" className='signup-image ' />
         </div>
