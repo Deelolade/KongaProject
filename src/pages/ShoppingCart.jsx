@@ -124,10 +124,10 @@ const ShoppingCart = () => {
                             <div className='p-3'>
                                 <div className='d-flex paymentCard'>
                                     <span className='acceptText'>We accept:</span>
-                                    <span><img src={cardOne} width={50} alt="" /></span>
-                                    <span><img src={cardTwo}width={50} alt="" /></span>
-                                    <span><img src={cardThree}width={50} alt="" /></span>
-                                    <span><img src={cardFour} width={50} alt="" /></span>
+                                    <span><img src={cardOne} width={90} alt="" /></span>
+                                    <span><img src={cardTwo}width={90} alt="" /></span>
+                                    <span><img src={cardThree}width={90} alt="" /></span>
+                                    <span><img src={cardFour} width={90} alt="" /></span>
                                 </div>
                                 <span><img src={secure} alt="" style={{width: '13px'}} /></span>
                                 <span className='safeText'>Transactions are 100% safe and secure</span>
