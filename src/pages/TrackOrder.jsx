@@ -35,7 +35,7 @@ return (
         {alertType === 'info' && (
                 <div className="alert alert-info alert-dismissible fade show mt-4" role="alert">
                     <button className="btn-close fw-bold text-danger" onClick={() => setAlertType(null)}></button>
-                    <p className='me-5 text-info' style={{ textAlign: "left" }}>Congratulations! Order in progress...</p>
+                    <p className='me-5 text-info' style={{ textAlign: "left" }}>Congratulations! Order in progress... </p>
                 </div>
             )}
             {alertType === 'danger' && (
@@ -47,7 +47,8 @@ return (
         </div>
     </div>
     <div className=""  style={{marginTop:"40vh",textAlign:"center" }}>
-        <p className='fw-bold'> Help? call <span className='fw-bold' style={{color:"#777"}}>0912 345 6789</span></p>
+        <p className='fw-bold mb-0'> Help? call <span className='fw-bold' style={{color:"#777"}}>0912 345 6789</span></p>
+    <div className="copyright mb-5">Copyright © <b>2024</b> Kxpress. All rights reserved</div>
     </div>
 
     </div>

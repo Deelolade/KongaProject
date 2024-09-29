@@ -1,43 +1,52 @@
-import React, { createContext, useState, useContext,useEffect } from 'react';
-import data from '../Api/products'
-import { useLocation,useNavigate } from 'react-router-dom';
+import React, { createContext, useState, useContext, useEffect } from 'react';
+import data from '../Api/products'; // Ensure your data structure has 'id' for each item
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const CartContext = createContext();
 
-export const CartProvider =({ children }) => {
-  const [cart, setCart] = useState([]);
-  const [cartCounter, setCartCounter] = useState(1);
-  const [counterValue, setCounterValue] = useState(0);
-  
-  const addToCart = (item) => {
-    setCart((prevcart)=>[...prevcart, item]);
+export const CartProvider = ({ children }) => {
+    const [cart, setCart] = useState([]);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const addToCart = (item) => {
+      setCart(prevCart => {
+          const existingItem = prevCart.find(cartItem => cartItem.id === item.id);
+          if (existingItem) {
+              return prevCart.map(cartItem => 
+                  cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + item.quantity } : cartItem
+              );
+          }
+          return [...prevCart, { ...item, quantity: item.quantity }];
+      });
   };
-  const increment = () => {
-    setCartCounter(prev => prev + 1);
-  };
-  const decrement = () => {
-    setCartCounter(prev => Math.max(prev - 1, 1)); 
-  };
-  const navigate = useNavigate();
-  const handleAddToCart = () => {
-    setCounterValue(prev => prev + cartCounter);
-    navigate('/shoppingcart');
+const increment = (id) => {
+  setCart(prevCart => prevCart.map(item => 
+      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+  ));
 };
-const location = useLocation();
-useEffect(() => {
-  setCartCounter(1); 
-}, [location]);
+
+const decrement = (id) => {
+  setCart(prevCart => prevCart.map(item => 
+      item.id === id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
+  ));
+};
+const getTotalItems = () => {
+  return cart.reduce((total, item) => total + item.quantity, 0);
+};
+const removeFromCart = (itemId) => {
+  setCart(prevCart => prevCart.filter(item => item.id !== itemId));
+};
 
 useEffect(() => {
   window.scrollTo(0, 0); // Scroll to the top of the page
 }, [location]); 
 
-  return (
-    <CartContext.Provider value={{ cart, addToCart,data,setCart,cartCounter,counterValue,increment,decrement,handleAddToCart}}>
+return (
+  <CartContext.Provider value={{ cart, addToCart, data, setCart, decrement,increment,getTotalItems,removeFromCart }}>
       {children}
-    </CartContext.Provider>
-  );
+  </CartContext.Provider>
+);
 }
 
-export const useCart =()=>   useContext(CartContext);
-
+export const useCart = () => useContext(CartContext);

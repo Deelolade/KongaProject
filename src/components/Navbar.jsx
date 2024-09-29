@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 
 const Navbar = () => {
-  const { counterValue } = useCart();
+  const { getTotalItems } = useCart();
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
@@ -28,7 +28,7 @@ const Navbar = () => {
         </li>
         </ul>
         <form className="d-flex mx-auto" role="search">
-        <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search"/>
+        <input className="" type="search" placeholder="Search for products,brands and categories..." aria-label="Search"/>
         <button type="submit"><AiOutlineSearch /> </button>
       </form>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
               <FaShoppingCart size={20} />
               <span className="ms-1">My Cart</span>
               <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem',color:'black'}}>
-                {counterValue}
+                {getTotalItems()}
               </span>
             </Link></span>
     </div>

@@ -8,7 +8,9 @@ const SignUp = () => {
   const inputstyle ={
     color: "black",
     fontSize: "13px",
-    border:"1px solid #000"
+    border:"1px solid #000",
+    width:"21.5rem"
+
   }
   const ValidationSchema = yup.object().shape({
     firstname: yup.string().required("Please fill out this field"),
@@ -29,37 +31,37 @@ const onSubmit = (data) => {
         <img src={Logo} alt="Konga Logo" className='signup-image ' />
         </div>
       <div className='form-container mt-5 shadow-2 border border-1 '>
-          <h1 className='form-heading '>Create an account</h1>
+          <h1 className='form-heading py-2'>Create an account</h1>
         <form action="" className='form mt-3 px-3 py-4 border border-1' onSubmit = {handleSubmit(onSubmit)}>
           <div className=' form-input my-2'>
           <label htmlFor="full name" className="form-label">First Name </label>
-          <input type="text" name="" id="full name" placeholder=' Enter first name'{...register('firstname')} className='form-control py-2 rounded-1' style={inputstyle}/>
+          <input type="text" name="" id="full name" placeholder=' Enter first name'{...register('firstname')} className='px-2 py-2 rounded-1' style={inputstyle}/>
           {errors.firstname && <p className='errors'>*{errors.firstname?.message}</p>}
           </div>
           <div className=' form-input my-2'>
           <label htmlFor="last name" className="form-label">Last Name </label>
-          <input type="text" name="" id="last name" placeholder=' Enter last name'{...register('lastname')} className=' form-control py-2 rounded-1' style={inputstyle}/>
+          <input type="text" name="" id="last name" placeholder=' Enter last name'{...register('lastname')} className=' px-2 py-2 rounded-1' style={inputstyle}/>
           {errors.lastname && <p className='errors'>*{errors.lastname?.message}</p>}
           </div>
           <div className=' form-input my-2'>
           <label htmlFor="Phone Number" className="form-label">Phone Number </label>
-          <input type="text" name="" id=" Phone Number " placeholder=' Enter phone number'{...register('phoneNumber')} className=' form-control py-2 rounded-1' style={inputstyle}/>
+          <input type="text" name="" id=" Phone Number " placeholder=' Enter phone number'{...register('phoneNumber')} className=' px-2 py-2 rounded-1' style={inputstyle}/>
           {errors.phoneNumber && <p className='errors'>*{errors.phoneNumber?.message}</p>}
           </div>
           <div className='form-input my-2 '>
           <label htmlFor="email" className="form-label">Email Address </label>
-          <input type="text" name="" id="email" placeholder='Enter Email Address' {...register('email')} className='form-control py-2 rounded-1' style={inputstyle}/>
+          <input type="text" name="" id="email" placeholder='Enter Email Address' {...register('email')} className='px-2 py-2 rounded-1' style={inputstyle}/>
           {errors.email && <p className='errors'>*{errors.email?.message}</p>}
           </div>
           
           <div className='form-input my-2'>
           <label htmlFor="password">Enter Password </label>
-          <input type="password" name="" id="password" placeholder='Password' {...register('password')} className=' form-control py-2 rounded-1 ' style={inputstyle}/>
+          <input type="password" name="" id="password" placeholder='Password' {...register('password')} className=' px-2 py-2 rounded-1 ' style={inputstyle}/>
           {errors.password && <p className='errors'>*{errors.password?.message}</p>}
           </div>
           <div className='form-input-text mt-3'>
-            {/* <input type="submit" value ="Create an account" className='submit-button form-control' /> */}
-            <button className="btn btn-success submit-button form-control py-1 rounded-1 " type='submit'> <h4 className='submit-button-text'>Create an account</h4></button>
+            {/* <input type="submit" value ="Create an account" className='submit-button px-2' /> */}
+            <button className="btn btn-success submit-button px-2 py-1 rounded-1" style={{width:"21.5rem"}} type='submit'> <h4 className='submit-button-text'>Create an account</h4></button>
           <div className="form-input-passage px-4">
           <p className='mt-3'>By signing up you accept our <span>terms and conditions & privacy policy</span> </p>
           </div>
@@ -70,7 +72,7 @@ const onSubmit = (data) => {
           <div className="form-footer-text mx-5">
           <p>Already have an account?</p>
           </div>
-          <button className="btn  form-footer-button form-control " type='submit'><h4 className='form-footer-button py-2 rounded-1 '><Link to="/login" className="nav-link" >Login</Link></h4></button>
+          <button className="btn  form-footer-button px-2 " style={{width:"21.5rem"}} type='submit'><h4 className='form-footer-button py-2 rounded-1 '><Link to="/login" className="nav-link" >Login</Link></h4></button>
         </div>
     </div>
   </div>  

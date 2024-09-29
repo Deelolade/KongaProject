@@ -6,7 +6,9 @@ import onlineshop from "../images/onlineshop.webp"
 import safeguard from "../images/safeguard.webp"
 import kongaSell from "../images/sell-on-konga.webp"
 import sellElectronics from "../Images/sellElectronics.png"
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaChevronRight } from 'react-icons/fa'
+
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -22,14 +24,18 @@ const SellOnKonga = () => {
   return (
     <>
     <Header />
-  <div className="overall-container mt-5 mx-auto" style={{background:'#f2f2f2', }}>
-     <div className="sales-header mb-5 shadowed-2 bg-white" >
-         <div className="sales-header-content py-3 mx-auto "style={{background:'#fff',maxWidth:"1440px",}}>
-         <h1 style={{fontSize:"45px",fontWeight:"bolder"}}>Sell On Konga</h1>
-         </div>
+    <div className='path-container mx-auto p-3 'style={{maxWidth:"1440px",}}> 
+        <div className='shop-path'>
+          <Link className='home-shop-path' to="/">Home</Link>
+          <span className="px-1"> <FaChevronRight color='gray' size={10}/></span>  
+          <Link className='shop-shop-path' to="/sellonkonga">Sell on Konga</Link>
+
+        </div>
+        <div className='shop-text'>
+          <p>Sell On Konga</p> 
+        </div>
       </div>
-    
-    
+  <div className="overall-container pt-3  mx-auto pb-5" style={{background:'#f2f2f2', }}>
         <div className="mobile mt-3" style={{background:'#fff', margin:'auto', width:'1440px',}} >
         <div className='sale-container d-flex'>
             <img src={kongaSell} alt="" height={300} className="m-3" />
@@ -84,7 +90,7 @@ const SellOnKonga = () => {
           </div>
           </div>
 
-      <div className="earn-money-container d-flex mx-auto"style={{ background:'#fff', width:'1440px', height:'220px'}}>
+      <div className="earn-money-container d-flex mx-auto "style={{ background:'#fff', width:'1440px', height:'220px'}}>
       <div className="earn-money m-5 p-3 ">
       <h1 style={{fontSize:"45px",fontWeight:"bolder"}}>Earn Money, Hassle Free</h1>
             <button className="register-button rounded-1" onClick={handleClick}>
