@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const { counterValue } = useCart();
+  const { getTotalItems } = useCart();
 
   const navigate = useNavigate();
 
@@ -68,7 +68,7 @@ const Navbar = () => {
               <FaShoppingCart size={20} />
               <span className="ms-1">My Cart</span>
               <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem',color:'black'}}>
-                {counterValue}
+                {getTotalItems()}
               </span>
             </Link></span>
     </div>

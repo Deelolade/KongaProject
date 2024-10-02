@@ -10,7 +10,8 @@ const LoginPage = () => {
     const inputstyle ={
         color: "#000",
         fontSize: "13px",
-        border:"1px solid #9b9b9b"
+        border:"1px solid #9b9b9b",
+        width:"21.5rem"
     }
     const ValidationSchema = yup.object().shape({
         emailAndNumber: yup.string().required("Please fill out this field").matches(/^\d{11,}$/, "This input is Invalid"),
@@ -28,7 +29,7 @@ const LoginPage = () => {
         <div className='form-image-body my-2'>
         <img src={Logo} alt="Konga Logo" className='signup-image ' />
         </div>
-    <div className='login-form-container mt-5 shadow-2 border border-1 '>
+    <div className='login-form-container mt-5 shadow-2 border border-1' >
         <h1 className='form-heading '>Login</h1>
         <form action="" className='form mt-3 px-3 py-4 border border-1' onSubmit = {handleSubmit(onSubmit)}>
             <div className='form-label-head d-flex '>
@@ -44,17 +45,17 @@ const LoginPage = () => {
             </div>
         <div className=' form-input mb-2'>
         <label htmlFor="email And Number" className="form-label mt-2">Email Address or Phone Number </label>
-        <input type="text" name="" id="email And Number" placeholder='Enter Email Address OR Phone Number '{...register('emailAndNumber')} className='form-control py-2 rounded-1' style={inputstyle}/>
-        {errors.emailAndNumber && <p className='errors'>*{errors.emailAndNumber?.message}</p>}
+        <input type="text" name="" id="email And Number" placeholder='Enter Email Address or Phone Number '{...register('emailAndNumber')} className='py-2 rounded-1 px-2' style={inputstyle}/>
+        {errors.emailAndNumber && <span className='errors'>*{errors.emailAndNumber?.message}</span>}
         </div>
         <div className='form-input my-2'>
         <label htmlFor="password">Enter Password </label> <span className='login-form-text'>Forgot Password?</span>
-        <input type="password" name="" id="password" placeholder='Password' {...register('password')} className=' form-control py-2 rounded-1 ' style={inputstyle}/>
+        <input type="password" name="" id="password" placeholder='Password' {...register('password')} className='py-2 rounded-1 px-2 ' style={inputstyle}/>
         {errors.password && <p className='errors'>*{errors.password?.message}</p>}
         </div>
         <div className='form-input-text mt-3'>
             {/* <input type="submit" value ="Create an account" className='submit-button form-control' /> */}
-            <button className="btn btn-success submit-button form-control py-1 rounded-1 " type='submit'> <h4 className='submit-button-text'>Login</h4></button>
+            <button className="btn btn-success submit-button form-contro py-1 rounded-1 " type='submit' style={{width:"21.5rem"}}> <h4 className='submit-button-text'>Login</h4></button>
         <div className="form-input-passage px-4">
         </div>
 
@@ -64,7 +65,7 @@ const LoginPage = () => {
         <div className="form-footer-text mx-5 mt-3">
         <p>Don't have an account?</p>
         </div>
-        <button className="btn  form-footer-button form-control " type='submit' ><h4 className='form-footer-button py-2 rounded-1 '><Link to="/signup"  className='nav-link' >Create an Account</Link></h4></button>
+        <button className="btn  form-footer-button form-contl " type='submit'  style={{width:"21.5rem"}}><h4 className='form-footer-button py-2 rounded-1 '><Link to="/signup"  className='nav-link' >Create an Account</Link></h4></button>
         </div>
     </div>
 </div>  
