@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const Navbar = ({onSearch}) => {
+const Navbar = () => {
   const { counterValue } = useCart();
 
   const navigate = useNavigate();
@@ -18,7 +18,9 @@ const Navbar = ({onSearch}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/search?query=${searchTerm}`);
+      if (searchTerm.trim()) {
+      navigate(`/search?query=${searchTerm}`);
+    }
   };
 
   return (
