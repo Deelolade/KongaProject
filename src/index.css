@@ -859,6 +859,19 @@ input:focus {
   box-shadow: none; /* Optional: removes the shadow effect */
 }
 
+.search-page-button-text button{
+  color: #ED017F;
+  padding: .3rem 3.1rem;
+  border: 1px solid #ED017F;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.search-page-button-text button:hover{
+  background-color: #ED017F;
+  color: #fff;
+}
+
 .path-container{
   margin-top: 30px;
   margin-left: 30px;
@@ -1003,7 +1016,7 @@ input:focus {
 }
 .itemContainer{
   width: 40vw;
-  /* height: 7rem; */
+  height: 7.5rem;
 }
 .qtyItmCont{
   display: flex;

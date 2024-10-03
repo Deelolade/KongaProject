@@ -41,6 +41,7 @@ import Glass from './pages/singleProductCat/Glass'
 import Earring from './pages/singleProductCat/Earring'
 import { CartProvider } from './components/ContextProvider'
 import TrackOrder from './pages/TrackOrder'
+import SearchResultsPage from './pages/SearchResultsPage'
 
 
 const App = () => {
@@ -89,6 +90,7 @@ const App = () => {
             <Route path='/storelocator' element = {<StoreLocator/>} />
             <Route path='/sellonkonga' element = {<Sellonkonga/>} />
             <Route path='/track' element = {<TrackOrder/>} />
+            <Route path='/search' element={<SearchResultsPage />} />
           </Routes>
       {/* <Footer/> */}
       </CartProvider>

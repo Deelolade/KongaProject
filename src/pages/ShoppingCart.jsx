@@ -71,7 +71,7 @@ const ShoppingCart = () => {
                                       <div className='d-flex itemContainer ' style={{width:"62rem"}}>
                                             <img src={item.imageUrl} alt={item.name} className='productImg' />
                                             <div className='itemName' style={{width:"32rem"}}>
-                                            <p className='mb-0 mt-2 fs-6' style={{fontSize:"13px",}}> Product:0{item.id}</p>
+                                            <p className='mb-0 mt-2 fs-6' style={{fontSize:"13px",}}> Product: 000{item.id}</p>
                                             <p style={{fontSize:"13px",color:"#ed017f"}} className='my-0 fw-bold' >Sold by Konga</p>
                                             <p style={{fontSize:"13px"}}  className='fw-bold'>{item.description}</p>
                                             </div>
@@ -91,8 +91,7 @@ const ShoppingCart = () => {
                                             <span className='removeClick pe-2' onClick={() => removeFromCart(item.id)}>Remove item</span>
                                             <span className='saveClick pe-2'>Save for Later</span>
                                         </div>
-                                      </div>
-                                      <hr  className='mt-2 mb-1 '/>
+                                      </div><hr  className='mt-0 mb-0 '/>
                                     </div>
                                   </div>
                                 ))
