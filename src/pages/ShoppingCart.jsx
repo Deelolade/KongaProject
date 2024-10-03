@@ -91,8 +91,7 @@ const ShoppingCart = () => {
                                             <span className='removeClick pe-2' onClick={() => removeFromCart(item.id)}>Remove item</span>
                                             <span className='saveClick pe-2'>Save for Later</span>
                                         </div>
-                                      </div>
-                                      <hr  className='mt-0 mb-0 '/>
+                                      </div><hr  className='mt-0 mb-0 '/>
                                     </div>
                                   </div>
                                 ))

@@ -15,7 +15,7 @@ const productCat = [
     category:"Computer and Accessories",
     price:927800,
     description:"Hp 240 G9 I7-1255u 14 8gb 256GB Pc - (777m2es)",
- discountPercentage: "15"},
+    discountPercentage: "15"},
     
     {id:3,
     imageUrl:"src/Images/Api-images/Zinox.png",
@@ -53,7 +53,7 @@ const productCat = [
     imageUrl:"src/Images/Api-images/Wireless mouse.png",
     nameOfProduct:"Wireless mouse",
     category:"Computer and Accessories",
-    price:4500,
+    price:4500,   
     description:"HP Ultra-slim USB 2.4ghz Wireless Mouse - Black",
     discountPercentage: "10"},
                             
@@ -159,6 +159,7 @@ const productCat = [
         nameOfProduct:"Camera",
         category:"Electronics",
         price:840000,
+
         description:"Insta Natural Ace Pro - Waterproof Action Camera Co-engineered With Leica, Flagship 1/1.3 Sens",
         discountPercentage: "10"},
         {
@@ -202,15 +203,14 @@ const productCat = [
         price:7000,
         description:"Men's Sneakers",
         discountPercentage: "20"},
-
         {id:26,
         imageUrl:"src/Images/Api-images/Wristwatch.png",
         nameOfProduct:"Wrist watch",
         category:"Konga Fashion",
         price:23500,
+
         description:"Chronograph Gold wristwatch",
         discountPercentage: "20"},
-
         {id:27,
         imageUrl:"src/Images/Api-images/Moccasine.png",
         nameOfProduct:"Moccasine",
@@ -218,7 +218,6 @@ const productCat = [
         price:23000,
         description:"Sebago Dockside Moccasine Boat Shoes",
         discountPercentage: "15"},
-
         {id:28,
         imageUrl:"src/Images/Api-images/Necklace.png",
         nameOfProduct:"Necklace",
@@ -238,11 +237,9 @@ const productCat = [
         {id:30,
         imageUrl:"src/Images/Api-images/Jacket & Joggers.png",
         nameOfProduct:"Jacket",
-        category:"Konga Fashion",
-        price:27000,
+        category:"Konga Fashion",price:27000,
         description:"Varsity Jacket With Joggers - White/black",
         discountPercentage: "20"},
-
         {
         id:31,
         imageUrl:"src/Images/Api-images/Glasses.png",

@@ -10,9 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const { getTotalItems } = useCart();
-
-  const navigate = useNavigate();
+  const { getTotalItems } = useCart();const navigate = useNavigate();
 
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -22,7 +20,6 @@ const Navbar = () => {
       navigate(`/search?query=${searchTerm}`);
     }
   };
-
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
@@ -39,9 +36,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
         </li>
-        </ul>
-        <form className="d-flex mx-auto" role="search" onSubmit={handleSubmit}>
+        </ul> <form className="d-flex mx-auto" role="search" onSubmit={handleSubmit}>
         <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+
         <button type="submit"><AiOutlineSearch /> </button>
       </form>
 
