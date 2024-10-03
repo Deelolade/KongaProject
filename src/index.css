@@ -1003,7 +1003,7 @@ input:focus {
 }
 .itemContainer{
   width: 40vw;
-  /* height: 7rem; */
+  height: 7.5rem;
 }
 .qtyItmCont{
   display: flex;
