@@ -8,10 +8,17 @@ import Display from '../components/Display'
 import Store from '../components/Store'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleSearch = (query) => {
+    navigate(`/search?q=${query}`);
+  };
   return (
     <div>
       <Header/>

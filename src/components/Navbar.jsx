@@ -6,10 +6,20 @@ import { FaShoppingCart } from 'react-icons/fa';
 import { RiQuestionFill } from "react-icons/ri";
 import { useCart } from '../components/ContextProvider'; 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const { getTotalItems } = useCart();
+  const { getTotalItems } = useCart();const navigate = useNavigate();
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+      if (searchTerm.trim()) {
+      navigate(`/search?query=${searchTerm}`);
+    }
+  };
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
         <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
@@ -26,9 +36,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
         </li>
-        </ul>
-        <form className="d-flex mx-auto" role="search">
-        <input className="" type="search" placeholder="Search for products,brands and categories..." aria-label="Search"/>
+        </ul> <form className="d-flex mx-auto" role="search" onSubmit={handleSubmit}>
+        <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+
         <button type="submit"><AiOutlineSearch /> </button>
       </form>
 

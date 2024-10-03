@@ -15,7 +15,7 @@ const productCat = [
     category:"Computer and Accessories",
     price:927800,
     description:"Hp 240 G9 I7-1255u 14 8gb 256GB Pc - (777m2es)",
- discountPercentage: "15"},
+    discountPercentage: "15"},
     
     {id:3,
     imageUrl:"src/Images/Api-images/Zinox.png",
@@ -202,7 +202,6 @@ const productCat = [
         price:7000,
         description:"Men's Sneakers",
         discountPercentage: "20"},
-
         {id:26,
         imageUrl:"src/Images/Api-images/Wristwatch.png",
         nameOfProduct:"Wrist watch",
@@ -218,7 +217,6 @@ const productCat = [
         price:23000,
         description:"Sebago Dockside Moccasine Boat Shoes",
         discountPercentage: "15"},
-
         {id:28,
         imageUrl:"src/Images/Api-images/Necklace.png",
         nameOfProduct:"Necklace",

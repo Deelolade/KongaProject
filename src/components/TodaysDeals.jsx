@@ -10,6 +10,7 @@ import TodaysDealsHp653 from '../images/TodaysDealsHp653.webp'
 import TodaysDealsHp652 from '../images/TodaysDealsHp652.webp'
 import TodaysDealsHp305 from '../images/TodaysDealsHp305.webp'
 import TodaysDealsHp216a from '../images/TodaysDealsHp216a.webp'
+import { Link } from 'react-router-dom'
 
 const TodaysDeals = () => {
     return (
@@ -20,7 +21,7 @@ const TodaysDeals = () => {
             <h4 className="h4 ms-3 fw-bolder fs-2">Today's Deals</h4>
         </div>
         <div className="flex-shrink-0" role="button">
-            <a href="index.html" className="text-white ms-5 text-decoration-none position-absolute top-0 mt-2 fw-medium seeAllItems" style={{fontSize: '12px'}}>See All Items</a>
+            <Link to="/search" className="text-white ms-5 text-decoration-none position-absolute top-0 mt-2 fw-medium seeAllItems" style={{fontSize: '12px'}}>See All Items</Link>
         </div>
         <div className="curvedIcons d-none d-md-flex faded-icons flex-grow-1 justify-content-around">
         <CiMobile1 className='position-absolute start-0' />
