@@ -8,7 +8,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineStar } from "react-icons/md";
 import { FaTruckFast } from "react-icons/fa6";
 import { MdOutlineStarHalf } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 import { useState } from 'react';
 import { useCart } from '../components/ContextProvider';
 import { useNavigate } from 'react-router-dom';
@@ -19,15 +19,20 @@ import { FaChevronRight } from 'react-icons/fa'
 
 
 const SingleProduct = () => {
-  const { addToCart, data,} = useCart();
+  const { addToCart, products,} = useCart();
   const navigate = useNavigate();
+  const { id } = useParams();
   const [quantity, setQuantity] = useState(1);
-  const [products, setProducts] = useState(data)
-  
-    const cartDisplay = products.find(product => product.id === 1);
+  // const [products, setProducts] = useState(data)
+  console.log(products);
+  console.log('Product ID from params:', id);
+console.log('Products array:', products);
+// console.log('Found product:', product); 
+    const product = products.find(item => item.id === 1);
+    
     const handleAddToCart = () => {
-      if (cartDisplay) {
-        const itemToAdd = { ...cartDisplay, quantity }; // Set quantity from state
+      if (product) {
+        const itemToAdd = { ...product, quantity }; // Set quantity from state
         addToCart(itemToAdd);
         navigate('/shoppingcart');
     } else {
@@ -57,14 +62,14 @@ const handleQuantityChange = (change) => {
         <div  className='main-product mx-auto d-flex'>
         <div className="main-single-product my-5 mx-2 d-flex " >
         <div className="product-image m-5 me-3">
-        <img src={cartDisplay.imageUrl} width="330"/>
+        <img src={product.imageUrl} width="330"/>
         </div>
         <div className="product-description p-5 mt-4">
-          <h1 className="fs-2">{cartDisplay.nameOfProduct} {cartDisplay.description}</h1>
-          <p className=" lh-1 text-letter-spacing-tight mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Category:</span> {cartDisplay.category}</p>
-          <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Product No:</span> {cartDisplay.id}</p>
+          <h1 className="fs-2">{product.nameOfProduct} {product.description}</h1>
+          <p className=" lh-1 text-letter-spacing-tight mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Category:</span> {product.category}</p>
+          <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Product No:</span> {product.id}</p>
         <hr className="my-1  side-product-rule" />
-        <h1 className="my-4 fw-bold">#{cartDisplay.price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</h1>
+        <h1 className="my-4 fw-bold">#{product.price}</h1>
         <hr className="my-1  side-product-rule"  />
           <div className="product-counter d-flex  mt-5">
           <p className="me-3 ">Quantity: </p>

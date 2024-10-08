@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import data from '../Api/products'; // Ensure your data structure has 'id' for each item
+import products from '../Api/products'; // Ensure your data structure has 'id' for each item
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const CartContext = createContext();
@@ -43,7 +43,7 @@ useEffect(() => {
 }, [location]); 
 
 return (
-  <CartContext.Provider value={{ cart, addToCart, data, setCart, decrement,increment,getTotalItems,removeFromCart }}>
+  <CartContext.Provider value={{ cart, addToCart, products, setCart, decrement,increment,getTotalItems,removeFromCart }}>
       {children}
   </CartContext.Provider>
 );

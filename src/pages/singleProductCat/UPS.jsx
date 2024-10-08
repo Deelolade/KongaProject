@@ -17,17 +17,14 @@ import Footer from '../../components/Footer'
 import { FaChevronRight } from 'react-icons/fa'
 
 
-
 const UPS = () => {
-  const { addToCart, data,} = useCart();
+  const { addToCart, products,} = useCart();
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
-  const [products, setProducts] = useState(data)
-  
-    const cartDisplay = products.find(product => product.id === 6);
+  const product = products.find(item => item.id === 6);
     const handleAddToCart = () => {
-      if (cartDisplay) {
-        const itemToAdd = { ...cartDisplay, quantity }; // Set quantity from state
+      if (product) {
+        const itemToAdd = { ...product, quantity }; // Set quantity from state
         addToCart(itemToAdd);
         navigate('/shoppingcart');
     } else {
@@ -35,36 +32,34 @@ const UPS = () => {
     }
 };
 const handleQuantityChange = (change) => {
-  setQuantity(prev => Math.max(prev + change, 1)); // Ensure minimum quantity is 1
+  setQuantity(prev => Math.max(prev + change, 1)); 
 };
-
-
   return (
     <div className="">
       <Header />
       <div className='path-container mx-auto'style={{maxWidth:"1440px",}}> 
         <div className='shop-path'>
-          <Link className='home-shop-path' to="/singleproduct">Home</Link>
+          <Link className='home-shop-path' to="/">Home</Link>
           <span> <FaChevronRight color='gray' size={10}/> </span>  
-          <Link className='shop-shop-path' to="">Computers & Accessories</Link>
+          <Link className='shop-shop-path' to="">Elctronics</Link>
 
         </div>
         <div className='shop-text'>
-          <p>Computers & Accessories</p> 
+          <p>Elctronics</p> 
         </div>
       </div>
       <div className="Single-product mx-auto container-fluid">
         <div  className='main-product mx-auto d-flex'>
         <div className="main-single-product my-5 mx-2 d-flex " >
         <div className="product-image m-5 me-3">
-        <img src={cartDisplay.imageUrl} width="330"/>
+        <img src={product.imageUrl} width="330"/>
         </div>
         <div className="product-description p-5 mt-4">
-          <h1 className="fs-2">{cartDisplay.nameOfProduct} {cartDisplay.description}</h1>
-          <p className=" lh-1 text-letter-spacing-tight mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Category:</span> {cartDisplay.category}</p>
-          <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Product No:</span> {cartDisplay.id}</p>
+          <h1 className="fs-2">{product.nameOfProduct} {product.description}</h1>
+          <p className=" lh-1 text-letter-spacing-tight mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Category:</span> {product.category}</p>
+          <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{fontSize:"12px"}}> <span style={{color:"#9b9b9b", fontSize:"12px"}}>Product No:</span> {product.id}</p>
         <hr className="my-1  side-product-rule" />
-          <h1 className="my-4 fw-bold">#{Math.floor(cartDisplay.price).toLocaleString()}
+          <h1 className="my-4 fw-bold">#{Math.floor(product.price).toLocaleString()}
           </h1>
         <hr className="my-1  side-product-rule"  />
           <div className="product-counter d-flex  mt-5">

@@ -10,7 +10,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const { getTotalItems } = useCart();const navigate = useNavigate();
+  const { getTotalItems } = useCart();
+  const navigate = useNavigate();
 
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -22,7 +23,7 @@ const Navbar = () => {
   };
   return (
     <div  className=' container-fluid ' style={{backgroundColor:"#ed017f", width:"100vw"}}>
-        <nav className="navbar navbar-expand-sm" style={{margin:"auto"}}>
+        <nav className="navbar navbar-expand" style={{margin:"auto"}}>
   <div className="container-fluid">
     <Link to='/'><img src={KongaLogo} alt="" className='me-5' /></Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
