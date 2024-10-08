@@ -1,8 +1,13 @@
 import KongaNow from "../Images/KongaNow.png";
 import { useNavigate } from "react-router-dom";
 
-
 const SearchResults = ({ products }) => {
+  const navigate = useNavigate(); // Move this outside of the map
+
+  const addToCart = (product) => {
+    const productLink = product.link || product.nameOfProduct.toLowerCase().replace(/\s+/g, '-'); // Fallback to a derived link
+    navigate(`/${productLink}`, { state: { product } });
+  };
 
   return (
     <div className="row">
@@ -21,10 +26,6 @@ const SearchResults = ({ products }) => {
 
         const totalDeduction = price - discountedPrice;
 
-        const navigate = useNavigate();
-        const addToCart =(product)=>{
-          navigate(`/${product.link}`, {state: { product }});
-        }
         return (
           <div key={product.id} className="col-md-3 mb-4">
             <div className="card border-0 shadow-sm productsShadows">
@@ -39,9 +40,11 @@ const SearchResults = ({ products }) => {
                   <del>₦{product.price.toLocaleString()}</del>
                 </span>
                 <span className="text-danger ms-1 bg-danger-subtle fs-9 fw-medium rounded-3"> {"- " + product.discountPercentage}% </span>
-                <div className="card-text"><small className="fw-medium" style={{fontSize: '12px', color: '#33B27B'}}>You save ₦{totalDeduction.toLocaleString()}</small></div>
-                <div className="card-text"><small className="fw-medium" style={{fontSize: '12px', color: '#ED017F'}}>Same Day Delivery Lagos</small></div>
-                <div className="search-page-button-text text-center" type="button" onClick={()=>addToCart(product)}><button type="button" className="btn">Add to Cart</button></div>
+                <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#33B27B' }}>You save ₦{totalDeduction.toLocaleString()}</small></div>
+                <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#ED017F' }}>Same Day Delivery Lagos</small></div>
+                <div className="search-page-button-text text-center" type="button" onClick={() => addToCart(product)}>
+                  <button type="button" className="btn">Add to Cart</button>
+                </div>
               </div>
             </div>
           </div>

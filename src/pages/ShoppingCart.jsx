@@ -72,8 +72,8 @@ const ShoppingCart = () => {
                                             <img src={item.imageUrl} alt={item.name} className='productImg' />
                                             <div className='itemName' style={{width:"32rem"}}>
                                             <p className='mb-0 mt-2 fs-6' style={{fontSize:"13px",}}> Product: 000{item.id}</p>
+                                            <p style={{fontSize:"13px"}}  className='fw-bold mb-0'>{item.description}</p>
                                             <p style={{fontSize:"13px",color:"#ed017f"}} className='my-0 fw-bold' >Sold by Konga</p>
-                                            <p style={{fontSize:"13px"}}  className='fw-bold'>{item.description}</p>
                                             </div>
                                         <div className='qtyItmCont '>
                                             <div className='product-count d-flex mt-3'>
