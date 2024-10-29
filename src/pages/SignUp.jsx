@@ -63,7 +63,7 @@ const onSubmit = (data) => {
             {/* <input type="submit" value ="Create an account" className='submit-button px-2' /> */}
             <button className="btn btn-success submit-button px-2 py-1 rounded-1" style={{width:"21.5rem"}} type='submit'> <h4 className='submit-button-text'>Create an account</h4></button>
           <div className="form-input-passage px-4">
-          <p className='mt-3'>By signing up you accept our <span>terms and conditions & privacy policy</span> </p>
+          <p className='mt-2 mb-0'>By signing up you accept our <span>terms and conditions & privacy policy</span> </p>
           </div>
 
           </div>
