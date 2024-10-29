@@ -1,10 +1,10 @@
 import chats from "../Images/chats.webp"
 import communication from "../Images/communication.webp"
 import Lowcommission from "../Images/Lowcommission.webp"
-import onlinepayment from "../images/onlinepayment.png"
-import onlineshop from "../images/onlineshop.webp"
-import safeguard from "../images/safeguard.webp"
-import kongaSell from "../images/sell-on-konga.webp"
+import onlinepayment from "../Images/onlinepayment.png"
+import onlineshop from "../Images/onlineshop.webp"
+import safeguard from "../Images/safeguard.webp"
+import kongaSell from "../Images/sell-on-konga.webp"
 import sellElectronics from "../Images/sellElectronics.png"
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa'
