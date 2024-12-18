@@ -1,4 +1,3 @@
-import React from 'react'
 import KongaBlogNav from '../Images/KongaBlogNav.webp'
 import PayBillsNav from '../Images/PayBillsNav.webp'
 import OfflineStoreNav from '../Images/OfflineStoreNav.webp'

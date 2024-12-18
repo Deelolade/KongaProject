@@ -4,7 +4,7 @@ import computers from '../Images/computers.png'
 import electronics from '../Images/electronics.png'
 import phones from '../Images/phones.png'
 import fashion from '../Images/fashion.png'
-const NavbarTwo = () => {
+const NavBottom = () => {
     const [Computers, setComputers] = useState(false);
     const [Phones, setPhones] = useState(false);
     const [Electronics, setElectronics] = useState(false);
@@ -158,7 +158,7 @@ const NavbarTwo = () => {
                                         <li><a href="#" className="dropdown-item">Android</a></li>
                                         <li><a href="#" className="dropdown-item">iOS</a></li>
                                         <li><a href="#" className="dropdown-item">Windows</a></li>
-                                        <li><a href="#" className="dropdown-item">Other OS'</a></li>
+                                        <li><a href="#" className="dropdown-item">Other OS&#39;</a></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-3 mt-3">
@@ -299,7 +299,7 @@ const NavbarTwo = () => {
                         <div className="NavbarTwo-hover-list p-4 ">
                             <div className="row NavbarTwo-hover-item-text ">
                                 <div className="col-lg-3 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Women's Wear</h6>
+                                    <h6 className="dropdown-header fw-bold">Women&#39;s Wear</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Dresses</a></li>
                                         <li><a href="#" className="dropdown-item">Tops</a></li>
@@ -313,7 +313,7 @@ const NavbarTwo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Women's Shoes</h6>
+                                    <h6 className="dropdown-header fw-bold">Women&#39;s Shoes</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Ballerinas & Flats</a></li>
                                         <li><a href="#" className="dropdown-item">Heels</a></li>
@@ -324,7 +324,7 @@ const NavbarTwo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-lg-3 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Women's Accessories</h6>
+                                    <h6 className="dropdown-header fw-bold">Women&#39;s Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Bags</a></li>
                                         <li><a href="#" className="dropdown-item">Belts</a></li>
@@ -334,7 +334,7 @@ const NavbarTwo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Men's Wear</h6>
+                                    <h6 className="dropdown-header fw-bold">Men&#39;s Wear</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Shirts</a></li>
                                         <li><a href="#" className="dropdown-item">Polos</a></li>
@@ -348,7 +348,7 @@ const NavbarTwo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Men's Shoes</h6>
+                                    <h6 className="dropdown-header fw-bold">Men&#39;s Shoes</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Casual Shoes</a></li>
                                         <li><a href="#" className="dropdown-item">Formal Shoes</a></li>
@@ -357,7 +357,7 @@ const NavbarTwo = () => {
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 mt-3">
-                                    <h6 className="dropdown-header fw-bold">Men's Accessories</h6>
+                                    <h6 className="dropdown-header fw-bold">Men&#39;s Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Belts & Wallets</a></li>
                                         <li><a href="#" className="dropdown-item">Socks & Underwear</a></li>
@@ -370,8 +370,8 @@ const NavbarTwo = () => {
                                 <div className="col-lg-4 mt-3">
                                     <h6 className="dropdown-header fw-bold">Watches</h6>
                                     <ul className="list-unstyled">
-                                        <li><a href="#" className="dropdown-item">Men's Watches</a></li>
-                                        <li><a href="#" className="dropdown-item">Women's Watches</a></li>
+                                        <li><a href="#" className="dropdown-item">Men&#39;s Watches</a></li>
+                                        <li><a href="#" className="dropdown-item">Women&#39;s Watches</a></li>
                                         <li><a href="#" className="dropdown-item">Unisex Watches</a></li>
                                     </ul>
                                 </div>
@@ -408,4 +408,4 @@ const NavbarTwo = () => {
     )
 }
 
-export default NavbarTwo
+export default NavBottom

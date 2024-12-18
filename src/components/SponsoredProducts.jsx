@@ -1,4 +1,3 @@
-import React from 'react'
 import Sp5HpHighest from '../Images/Sp5HpHighest.webp'
 import SpAmericanFitness from '../Images/SpAmericanFitness.webp'
 import SpCloudInverter from '../Images/SpCloudInverter.webp'
@@ -30,7 +29,7 @@ const SponsoredProducts = () => {
             <div className='card me-4 border-0 shadow-sm py-3 productsShadows' style={{minWidth: '250px'}} role='button'>
                 <img src={SpKingsCapsule} className='card-img-top w-75 mx-auto' alt='...' />
                 <div className='card-body'>
-                    <h6 className='card-title'>King's Capsules - Men Only ...</h6>
+                    <h6 className='card-title'>King&#39;s Capsules - Men Only ...</h6>
                     <h5 className="card-text fw-bold mt-3">₦29,000</h5>
                 </div>
             </div>

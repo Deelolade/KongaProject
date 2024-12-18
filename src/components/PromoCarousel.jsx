@@ -1,4 +1,3 @@
-import React from 'react'
 import ClearanceSale from '../Images/ClearanceSale.jpeg'
 import ContactUs from '../Images/ContactUs.jpeg'
 import HomeEssentials from '../Images/HomeEssentials.jpg'

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { AiOutlineSearch } from "react-icons/ai";
 import KongaLogo from '../Images/KongaLogo.png'
-import { MdShoppingCart } from "react-icons/md"
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiQuestionFill } from "react-icons/ri";
 import { useCart } from '../components/ContextProvider'; 

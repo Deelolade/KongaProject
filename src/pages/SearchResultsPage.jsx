@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import productCat from '../Api/products'; // Adjust the import path
-import SearchResults from './SearchResults';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -119,7 +118,7 @@ const SearchResultsPage = () => {
             <div className="d-flex justify-content-between align-items-center mb-4">
             <h2>Search Results for: {query}</h2>
               <div className='dropdown'>
-                <div className='dropdown-toggle' variant="outline-secondary" data-bs-toggle="dropdown" type="button">
+                <div className='dropdown-toggle'  data-bs-toggle="dropdown" type="button">
                   Sort By
                 </div>
                 <div className='dropdown-menu'>

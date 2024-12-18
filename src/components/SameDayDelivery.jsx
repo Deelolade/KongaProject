@@ -1,4 +1,3 @@
-import React from 'react'
 import { PiWarningCircle } from "react-icons/pi"
 import SameDayFaceMask from '../Images/SameDayFaceMask.webp'
 import SameDayHp305 from '../Images/SameDayHp305.webp'

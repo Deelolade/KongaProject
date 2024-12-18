@@ -1,13 +1,8 @@
 import { useState } from 'react'
-import { MdKeyboardArrowRight } from "react-icons/md";
-
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FaChevronRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
-
-
-
 const StoreLocator = () => {
     const [selectedState, setSelectedState] = useState('');
     const [selectedCity, setSelectedCity] = useState('');

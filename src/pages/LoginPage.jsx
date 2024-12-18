@@ -63,7 +63,7 @@ const LoginPage = () => {
         </form> 
         <div className="form-footer  mt-2 mx-2">
         <div className="form-footer-text mx-5 mt-3">
-        <p>Don't have an account?</p>
+        <p>Don&#39;t have an account?</p>
         </div>
         <button className="btn  form-footer-button form-contl " type='submit'  style={{width:"21.5rem"}}><h4 className='form-footer-button py-2 rounded-1 '><Link to="/signup"  className='nav-link' >Create an Account</Link></h4></button>
         </div>

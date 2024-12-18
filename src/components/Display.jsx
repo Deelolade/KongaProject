@@ -1,5 +1,3 @@
-
-import React from 'react'
 import DisplayComputing from '../Images/DisplayComputing.webp'
 import DisplayElectronics from '../Images/DisplayElectronics.webp'
 import DisplayGroceries from '../Images/DisplayGroceries.jpg'
