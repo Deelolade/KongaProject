@@ -1,10 +1,11 @@
+
 import React from 'react'
-import DisplayComputing from '../images/DisplayComputing.webp'
-import DisplayElectronics from '../images/DisplayElectronics.webp'
-import DisplayGroceries from '../images/DisplayGroceries.jpg'
-import DisplayHomeAndKitchen from '../images/DisplayHomeAndKitchen.webp'
-import DisplayMobilePhones from '../images/DisplayMobilePhones.webp'
-import DisplayPower from '../images/DisplayPower.webp'
+import DisplayComputing from '../Images/DisplayComputing.webp'
+import DisplayElectronics from '../Images/DisplayElectronics.webp'
+import DisplayGroceries from '../Images/DisplayGroceries.jpg'
+import DisplayHomeAndKitchen from '../Images/DisplayHomeAndKitchen.webp'
+import DisplayMobilePhones from '../Images/DisplayMobilePhones.webp'
+import DisplayPower from '../Images/DisplayPower.webp'
 
 const Display = () => {
   

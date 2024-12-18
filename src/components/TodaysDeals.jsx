@@ -4,12 +4,12 @@ import { BsLaptop } from "react-icons/bs"
 import { PiHeadphonesLight } from "react-icons/pi"
 import { PiTShirtLight } from "react-icons/pi"
 import { HiOutlineGift } from "react-icons/hi2"
-import TodaysDealsStarlink from '../images/TodaysDealsStarlink.webp'
-import TodaysDealsNexus1200 from '../images/TodaysDealsNexus1200.webp'
-import TodaysDealsHp653 from '../images/TodaysDealsHp653.webp'
-import TodaysDealsHp652 from '../images/TodaysDealsHp652.webp'
-import TodaysDealsHp305 from '../images/TodaysDealsHp305.webp'
-import TodaysDealsHp216a from '../images/TodaysDealsHp216a.webp'
+import TodaysDealsStarlink from '../Images/TodaysDealsStarlink.webp'
+import TodaysDealsNexus1200 from '../Images/TodaysDealsNexus1200.webp'
+import TodaysDealsHp653 from '../Images/TodaysDealsHp653.webp'
+import TodaysDealsHp652 from '../Images/TodaysDealsHp652.webp'
+import TodaysDealsHp305 from '../Images/TodaysDealsHp305.webp'
+import TodaysDealsHp216a from '../Images/TodaysDealsHp216a.webp'
 import { Link } from 'react-router-dom'
 
 const TodaysDeals = () => {

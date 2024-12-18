@@ -1,10 +1,10 @@
 import React from 'react'
-import KongaBlogNav from '../images/KongaBlogNav.webp'
-import PayBillsNav from '../images/PayBillsNav.webp'
-import OfflineStoreNav from '../images/OfflineStoreNav.webp'
-import BrandStoresNav from '../images/BrandStoresNav.webp'
-import BookFlightsNav from '../images/BookFlightsNav.webp'
-import WatchKongaTvNav from '../images/WatchKongaTvNav.webp'
+import KongaBlogNav from '../Images/KongaBlogNav.webp'
+import PayBillsNav from '../Images/PayBillsNav.webp'
+import OfflineStoreNav from '../Images/OfflineStoreNav.webp'
+import BrandStoresNav from '../Images/BrandStoresNav.webp'
+import BookFlightsNav from '../Images/BookFlightsNav.webp'
+import WatchKongaTvNav from '../Images/WatchKongaTvNav.webp'
 
 const NavbarFour = () => {
   return (

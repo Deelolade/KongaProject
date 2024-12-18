@@ -1,15 +1,15 @@
 import React from 'react'
 import { PiWarningCircle } from "react-icons/pi"
-import SameDayFaceMask from '../images/SameDayFaceMask.webp'
-import SameDayHp305 from '../images/SameDayHp305.webp'
-import SameDayLg from '../images/SameDayLg.webp'
-import SameDayNokia105 from '../images/SameDayNokia105.webp'
-import SameDayOil from '../images/SameDayOil.webp'
-import SameDaySaisho from '../images/SameDaySaisho.webp'
-import SameDayStarlink from '../images/SameDayStarlink.webp'
-import SameDayStarlinkTwo from '../images/SameDayStarlinkTwo.webp'
+import SameDayFaceMask from '../Images/SameDayFaceMask.webp'
+import SameDayHp305 from '../Images/SameDayHp305.webp'
+import SameDayLg from '../Images/SameDayLg.webp'
+import SameDayNokia105 from '../Images/SameDayNokia105.webp'
+import SameDayOil from '../Images/SameDayOil.webp'
+import SameDaySaisho from '../Images/SameDaySaisho.webp'
+import SameDayStarlink from '../Images/SameDayStarlink.webp'
+import SameDayStarlinkTwo from '../Images/SameDayStarlinkTwo.webp'
+import KongaNow from '../Images/KongaNow.png'
 import { MdStarRate } from "react-icons/md"
-import KongaNow from '../images/KongaNow.png'
 import { LiaShippingFastSolid } from "react-icons/lia"
 
 const SameDayDelivery = () => {
