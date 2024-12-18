@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import SearchResults from './SearchResults';
 import { useLocation } from 'react-router-dom';
 import productCat from '../Api/products'; // Adjust the import path
 import Header from '../components/Header';
