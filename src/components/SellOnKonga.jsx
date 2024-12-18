@@ -8,7 +8,6 @@ import kongaSell from "../Images/sell-on-konga.webp"
 import sellElectronics from "../Images/sellElectronics.png"
 import { Link, useNavigate } from 'react-router-dom';
 import { FaChevronRight } from 'react-icons/fa'
-
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
