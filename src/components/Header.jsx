@@ -5,8 +5,8 @@ import NavbarTwo from './NavbarTwo'
 const Header = () => {
   return (
     <div className='sticky-top' >
-        <Navbar/>
-        <NavbarTwo/>
+      <Navbar />
+      <NavbarTwo />
     </div>
   )
 }
