@@ -5,7 +5,7 @@ import electronics from '../Images/electronics.png'
 import phones from '../Images/phones.png'
 import fashion from '../Images/fashion.png'
 
-const navbarTwo = () => {
+const NavbarTwo = () => {
     const [Computers, setComputers] = useState(false);
     const [Phones, setPhones] = useState(false);
     const [Electronics, setElectronics] = useState(false);
@@ -414,4 +414,4 @@ const navbarTwo = () => {
   )
 }
 
-export default navbarTwo
+export default NavbarTwo
