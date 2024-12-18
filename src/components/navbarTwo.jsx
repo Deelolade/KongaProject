@@ -414,4 +414,4 @@ const NavbarTwo = () => {
   )
 }
 
-export default NavbarTwo
+export default NavbarTwo ;
