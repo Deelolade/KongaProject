@@ -1,7 +1,7 @@
 const productCat = [
     {
     id:1,
-    imageUrl:"src/Images/Api-images/HP.png",
+    imageUrl:"/Api-images/HP.png",
     nameOfProduct:"Lenovo Thinkpad",
     category:"  Computer and Accessories",
     price:927800,
@@ -11,7 +11,7 @@ const productCat = [
     },
     
     {id:2,
-    imageUrl:"src/Images/Api-images/HP.png",
+    imageUrl:"/Api-images/HP.png",
     nameOfProduct:"HP Elitebook",
     category:"Computer and Accessories",
     price:927800,
@@ -20,7 +20,7 @@ const productCat = [
     link:"elitebook"},
     
     {id:3,
-    imageUrl:"src/Images/Api-images/Zinox.png",
+    imageUrl:"/Api-images/Zinox.png",
     nameOfProduct:"Zinox Phoenix",
     category:"Computer and Accessories",
     price:660000,
@@ -30,7 +30,7 @@ const productCat = [
     },
     
     {id:4,
-    imageUrl:"src/Images/Api-images/Vga-adapter.png",
+    imageUrl:"/Api-images/Vga-adapter.png",
     nameOfProduct:"Vga Adapter",
     category:"Computer and Accessories",
     price:3000,
@@ -39,7 +39,7 @@ const productCat = [
     link:"vga"    
     },          
     {id:5,
-    imageUrl:"src/Images/Api-images/LaptopStand.png",
+    imageUrl:"/Api-images/LaptopStand.png",
     nameOfProduct:"A&S Laptop Stand",
     category:"Computer and Accessories",
     price:7500,
@@ -48,7 +48,7 @@ const productCat = [
     link:"laptopstand"
     },                
     {id:6,
-    imageUrl:"src/Images/Api-images/Ups.png",
+    imageUrl:"/Api-images/Ups.png",
     nameOfProduct:"UPS",
     category:"Computer and Accessories",
     price:32900,
@@ -57,7 +57,7 @@ const productCat = [
     link:"ups"
     },           
     {id:7,
-    imageUrl:"src/Images/Api-images/Wireless mouse.png",
+    imageUrl:"/Api-images/Wireless mouse.png",
     nameOfProduct:"Wireless mouse",
     category:"Computer and Accessories",
     price:4500,
@@ -66,7 +66,7 @@ const productCat = [
     link:"mouse"
     },                    
     {id:8,
-    imageUrl:"src/Images/Api-images/Flash drive.png",
+    imageUrl:"/Api-images/Flash drive.png",
     nameOfProduct:"Flash drive",
     category:"Computer and Accessories",
     price:13000,
@@ -75,7 +75,7 @@ const productCat = [
     link:"flash"
     },
     {id:9,
-    imageUrl:"src/Images/Api-images/Iphone15.png",
+    imageUrl:"/Api-images/Iphone15.png",
     nameOfProduct:"Apple iPhone 15 Pro",
     category:"Phone and Tablet",
     price:1796500,
@@ -84,7 +84,7 @@ const productCat = [
     link:"iphone"
     },                      
     {id:10,
-    imageUrl:"src/Images/Api-images/Samsung.png",
+    imageUrl:"/Api-images/Samsung.png",
     nameOfProduct:"Samsung Galaxy",
     category:"Phone and Tablet",
     price:310000,
@@ -93,7 +93,7 @@ const productCat = [
     link:"galaxy"
     },
     {id:11,
-    imageUrl:"src/Images/Api-images/Infinix.png",
+    imageUrl:"/Api-images/Infinix.png",
     nameOfProduct:"Infinix",
     category:"Phone and Tablet",
     price:312000,
@@ -102,7 +102,7 @@ const productCat = [
     link:"infinix"
     },
     {id:12,
-    imageUrl:"src/Images/Api-images/Techno.png",
+    imageUrl:"/Api-images/Techno.png",
     nameOfProduct:"Techno",
     category:"Phone and Tablet",
     price:250000,
@@ -111,7 +111,7 @@ const productCat = [
     link:"techno"
     },
     {id:13,
-    imageUrl:"src/Images/Api-images/Huawei.png",
+    imageUrl:"/Api-images/Huawei.png",
     nameOfProduct:"Huawei",
     category:"Phone and Tablet",
     price:1650000,
@@ -120,7 +120,7 @@ const productCat = [
     link:"huawei"
     },
     {id:14,
-    imageUrl:"src/Images/Api-images/Oppo.png",
+    imageUrl:"/Api-images/Oppo.png",
     nameOfProduct:"Oppo",
     category:"Phone and Tablet",
     price:190000,
@@ -129,7 +129,7 @@ const productCat = [
     link:"oppo",
     },
     {id:15,
-    imageUrl:"src/Images/Api-images/ZTE.png",
+    imageUrl:"/Api-images/ZTE.png",
     nameOfProduct:"ZTE",
     category:"Phone and Tablet",
     price:93000,
@@ -138,7 +138,7 @@ const productCat = [
     link:"zte",            
     },
     {id:16,
-    imageUrl:"src/Images/Api-images/Itel.png",
+    imageUrl:"/Api-images/Itel.png",
     nameOfProduct:"Itel",
     category:"Phone and Tablet",
     price:92800,
@@ -147,7 +147,7 @@ const productCat = [
     link:"itel"
     },
     {id:17,
-    imageUrl:"src/Images/Api-images/Nexus tv.png",
+    imageUrl:"/Api-images/Nexus tv.png",
     nameOfProduct:"Nexus tv",
     category:"Electronics",
     price:116600,
@@ -156,7 +156,7 @@ const productCat = [
     link:"nexus"
     },
     {id:18,
-    imageUrl:"src/Images/Api-images/Samsung tv.png",
+    imageUrl:"/Api-images/Samsung tv.png",
     nameOfProduct:"Samsung tv",
     category:"Electronics",
     price:511800,
@@ -165,7 +165,7 @@ const productCat = [
     link:"samsung"
     },
     {id:19,
-    imageUrl:"src/Images/Api-images/Hisense woofer.png",
+    imageUrl:"/Api-images/Hisense woofer.png",
     nameOfProduct:"Hisense Woofer",
     category:"Electronics",
     price:139000,
@@ -174,7 +174,7 @@ const productCat = [
     link:"hisense"
     },
     {id:20,
-    imageUrl:"src/Images/Api-images/Camera.png",
+    imageUrl:"/Api-images/Camera.png",
     nameOfProduct:"Camera",
     category:"Electronics",
     price:840000,
@@ -183,7 +183,7 @@ const productCat = [
     link:"camera",
     },
     {id:21,
-    imageUrl:"src/Images/Api-images/Bluetooth.png",
+    imageUrl:"/Api-images/Bluetooth.png",
     nameOfProduct:"Bluetooth",
     category:"Electronics",
     price:65000,
@@ -192,7 +192,7 @@ const productCat = [
     link:"bluetooth"
     },
     {id:22,
-    imageUrl:"src/Images/Api-images/Mic.png",
+    imageUrl:"/Api-images/Mic.png",
     nameOfProduct:"Wireless Mic",
     category:"Electronics",
     price:20000,
@@ -201,7 +201,7 @@ const productCat = [
     link:"wireless"
     },
     {id:23,
-    imageUrl:"src/Images/Api-images/Headphone.png",
+    imageUrl:"/Api-images/Headphone.png",
     nameOfProduct:"Headphone",
     category:"Electronics",
     price:89000,
@@ -210,7 +210,7 @@ const productCat = [
     link:"headphone"
     },
     {id:24,
-    imageUrl:"src/Images/Api-images/Mixer.png",
+    imageUrl:"/Api-images/Mixer.png",
     nameOfProduct:"Mixer",
     category:"Electronics",
     price:60000,
@@ -219,7 +219,7 @@ const productCat = [
     link:"mixer"
     },
     {id:25,
-    imageUrl:"src/Images/Api-images/Sneakers.png",
+    imageUrl:"/Api-images/Sneakers.png",
     nameOfProduct:"Sneakers",
     category:"Konga Fashion",
     price:7000,
@@ -228,7 +228,7 @@ const productCat = [
     link:"sneakers"
     },
     {id:26,
-    imageUrl:"src/Images/Api-images/Wristwatch.png",
+    imageUrl:"/Api-images/Wristwatch.png",
     nameOfProduct:"Wrist watch",
     category:"Konga Fashion",
     price:23500,
@@ -237,7 +237,7 @@ const productCat = [
     link:"watch"
     },
     {id:27,
-    imageUrl:"src/Images/Api-images/Moccasine.png",
+    imageUrl:"/Api-images/Moccasine.png",
     nameOfProduct:"Moccasine",
     category:"Konga Fashion",
     price:23000,
@@ -246,7 +246,7 @@ const productCat = [
     link:"moccasine"
     },
     {id:28,
-    imageUrl:"src/Images/Api-images/Necklace.png",
+    imageUrl:"/Api-images/Necklace.png",
     nameOfProduct:"Necklace",
     category:"Konga Fashion",
     price:1800,
@@ -255,7 +255,7 @@ const productCat = [
     link:"necklace"
     },
     {id:29,
-    imageUrl:"src/Images/Api-images/Purse.png",
+    imageUrl:"/Api-images/Purse.png",
     nameOfProduct:"Purse",
     category:"Konga Fashion",
     price:27000,
@@ -264,7 +264,7 @@ const productCat = [
     link:"purse"
     },
     {id:30,
-    imageUrl:"src/Images/Api-images/Jacket & Joggers.png",
+    imageUrl:"/Api-images/Jacket & Joggers.png",
     nameOfProduct:"Jacket",
     category:"Konga Fashion",
     price:27000,
@@ -273,7 +273,7 @@ const productCat = [
     link:"jacket"    
     },
     {id:31,
-    imageUrl:"src/Images/Api-images/Glasses.png",
+    imageUrl:"/Api-images/Glasses.png",
     nameOfProduct:"Glass",
     category:"Konga Fashion",
     price:18200,
@@ -282,7 +282,7 @@ const productCat = [
     link:"glass"
     },
     {id:32,
-    imageUrl:"src/Images/Api-images/Earring.png",
+    imageUrl:"/Api-images/Earring.png",
     nameOfProduct:"Earring",
     category:"Konga Fashion",
     price:13800,
