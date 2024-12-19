@@ -99,8 +99,8 @@ const Store = () => {
         </div>
       </div>
 
-      <div className='store-ads-container container p-2 shadow' >
-      < img  src={ads} alt=""  style={{width:"1280px"}}/>
+      <div className='store-ads-container  p-2 shadow' style={{width:"auto"}} >
+      < img  src={ads} alt=""  className='store-image'/>
       </div>
     </div>
   )
