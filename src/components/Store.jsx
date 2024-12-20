@@ -20,7 +20,7 @@ import ads from '../Images/KidSpecial.jpg'
 
 const Store = () => {
   return (
-    <div className='store-body m-3 container ' style={{width:"1440px"}}>
+    <div className='store-body' style={{width:"1440px"}}>
       <div className='store-header #F5A623 '>
         <h3 className='text-center py-2 ps-3 fw-bold store-header-text'>Official Store</h3>
       </div>

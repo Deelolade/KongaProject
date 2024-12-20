@@ -129,17 +129,17 @@ const NavBottom = () => {
             )}
             {Phones && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover">
-                    <div className="NavbarTwo-hover-item d-flex" onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >
-                        <div className="NavbarTwo-hover-list p-4 ">
-                            <div className="row NavbarTwo-hover-item-text ">
-                                <div className="col-lg-3 mt-3">
+                    <div className="NavbarTwo-hover-item d-flex justify-content-between " onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >
+                        <div className="NavbarTwo-hover-list p-5 ">
+                            <div className="d-grid NavbarTwo-hover-item-text justify-content-between ">
+                                <div className=" mt-3">
                                     <h6 className="dropdown-header fw-bold">Mobile Phones</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Smartphones</a></li>
                                         <li><a href="#" className="dropdown-item">Feature Phones</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className=" mt-3">
                                     <h6 className="dropdown-header fw-bold">Mobile Phone Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Cables</a></li>
@@ -152,7 +152,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Batteries</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className=" mt-3 me-4">
                                     <h6 className="dropdown-header fw-bold">Tablets</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Android</a></li>
@@ -161,14 +161,14 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Other OS&#39;</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className=" mt-3">
                                     <h6 className="dropdown-header fw-bold">Tablet Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Cases & Covers</a></li>
                                         <li><a href="#" className="dropdown-item">Holders & Stands</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-5">
+                                <div className=" mt-5 me-4">
                                     <h6 className="dropdown-header fw-bold">Other Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Shop By Price</a></li>
@@ -181,7 +181,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">60,000 & Above</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className=" mt-5">
                                     <h6 className="dropdown-header fw-bold">Desk, Radio & Intercom Phones</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Other Brands</a></li>
@@ -194,7 +194,7 @@ const NavBottom = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="NavbarTwo-hover-item-image p-4 mt-5 pe-5">
+                        <div className="NavbarTwo-hover-item-image p-4 pe-5">
                             <img src={phones} alt="" />
                         </div>
                     </div>

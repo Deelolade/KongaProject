@@ -60,7 +60,6 @@ const onSubmit = (data) => {
           {errors.password && <p className='errors'>*{errors.password?.message}</p>}
           </div>
           <div className='form-input-text mt-3'>
-            {/* <input type="submit" value ="Create an account" className='submit-button px-2' /> */}
             <button className="btn btn-success submit-button px-2 py-1 rounded-1" style={{width:"21.5rem"}} type='submit'> <h4 className='submit-button-text'>Create an account</h4></button>
           <div className="form-input-passage px-4">
           <p className='mt-2 mb-0'>By signing up you accept our <span>terms and conditions & privacy policy</span> </p>
@@ -72,7 +71,7 @@ const onSubmit = (data) => {
           <div className="form-footer-text mx-5">
           <p>Already have an account?</p>
           </div>
-          <button className="btn  form-footer-button px-2 " style={{width:"21.5rem"}} type='submit'><h4 className='form-footer-button py-2 rounded-1 '><Link to="/login" className="nav-link" >Login</Link></h4></button>
+          <button className="btn  form-footer-button px-2 " style={{width:"21.5rem"}} type='submit'><h4 className='form-footer-button  rounded-1 '><Link to="/login" className="nav-link py-2" >Login</Link></h4></button>
         </div>
     </div>
   </div>  
