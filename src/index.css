@@ -25,11 +25,12 @@
 .nav-item {
   color: #fff;
   font-size: .8125rem;
-  padding: 26px 25px;
+  height: 8vh;
+  width: 8rem;
+  display: flex;
   justify-content: center;
   transition: background-color .3s ease-in-out;
   list-style-type:none;
-  /* margin-left:2vh */
 }
 
 .nav-item:hover{
@@ -64,15 +65,11 @@
   margin-right: .2rem;
   margin-left: -1px; 
   border-radius: 0 0.375rem 0.375rem 0;
-  
 }
-
-
 .navbar img{
   max-height: 2.1875rem;
   width: 7.96875rem;
 }
-
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -84,35 +81,28 @@
   padding: 10px;
   border: none;
 }
-
 .nav-item:hover .dropdown-menu {
   display: block;
   border: none;
 }
-
 .dropdown-menu .dropdown-item{
   font-size: .9rem;
 }
-
 .dropdown-menu .dropdown-item:hover {
   text-decoration: none;
   display: block;
   background-color: #f1f1f1;
   color:#ed017f;
   font-size: .9rem;
-
 }
-
 .nav-link{
   margin:auto;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
-
 .Nav-container{
   background-color: #94004F;
 }
-
 .Nav-container div {
   margin: auto;
   justify-items: center;
@@ -122,13 +112,11 @@
   font-size: .8125rem;
   line-height: 2rem;
 }
-
 .container a {
   text-decoration: none;
   color: white;
   padding: .9rem;
 }
-
 .container a:hover {
   color: black;
   background-color: white;
@@ -137,16 +125,13 @@
   width: 100%;
 } 
 .Footer-top{
-  /* width: 100%; */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #2E2E2E;
-  height: 8vh;
 }
 .Footer-top-main{
   background-color: #2E2E2E;
-  margin: auto;
   height: 8vh;
-  width: 100%;
+  width: 1440px;
 }
 .Footer-top-logo{
   background-color: #fff;
@@ -156,7 +141,11 @@
   font-size: 18px;
   border-radius: 50px;
   text-align: center;
+  max-width: 100%;
   justify-content: center;
+}
+.Footer-top-text{
+  line-height: 10px;
 }
 .Footer-top-text h3{
   font-size: 15px;
@@ -175,15 +164,13 @@
   height: 2.5rem;
   background-color: #ED017F;
   border-radius: 3px;
+  width: auto;
 }
 .Footer-input-area{
-  /* font-size: 10rem; */
   color: #2E2E2E;
-  width: 13rem;
   height: 2.5rem;
   border: none;
   font-size: 13px;
-
 }
 .Footer-button{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -201,7 +188,7 @@
 }
 .Footer-main-bottom{
   width: 1440px;
-  height: 33vh;
+  height: 33%;
   margin: auto;
   background-color: #0C0C0C;
 }
@@ -720,10 +707,9 @@
   top: 12vh;
   position: absolute;
   background-color: #000000d3;
-  width: 100vw;
+  width: 100%;
   height: 88vh;
   z-index: 1000;
-  
 }
 .NavbarTwo-hover-item{
   background-color: white;

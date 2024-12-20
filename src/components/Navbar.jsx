@@ -36,7 +36,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
               </li>
-            </ul> <form className="d-flex mx-auto" role="search" onSubmit={handleSubmit}>
+            </ul> <form className="d-flex mx-3" role="search" onSubmit={handleSubmit}>
               <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
               <button type="submit"><AiOutlineSearch /> </button>
