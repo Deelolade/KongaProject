@@ -29,7 +29,7 @@ const NavBottom = () => {
 
             {Computers && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover ">
-                    <div className="NavbarTwo-hover-item  d-flex" onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >
+                    <div className="NavbarTwo-hover-item  mx-auto d-flex" onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >
                         <div className="NavbarTwo-hover-list p-4 ">
                             <div className="row NavbarTwo-hover-item-text ">
                                 <div className="col-lg-4 mt-3">
