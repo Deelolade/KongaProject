@@ -14,20 +14,20 @@ import { LiaShippingFastSolid } from "react-icons/lia"
 const SameDayDelivery = () => {
   return (
     <div>
-      <div className='container-fluid mt-5'>
-        <div className='sameDayDeliveryHeading rounded-top py-3 text-dark d-flex'>
-            <div className="flex-shrink-0">
+      <div className=' mt-5' style={{width:"1440px"}}>
+        <div className='sameDayDeliveryHeading rounded-top py-3 px-3 text-dark d-flex align-items-center justify-content-between'>
+            <div className="flex-shrink-0 d-flex">
                 <h5 className="h4 ms-3 fw-bold my-auto">Same Day Delivery (KongaNow)</h5>
-            </div>
             <div className="flex-shrink-0">
-                <a href="#" className="ms-5 text-decoration-none fw-medium seeAllItemsSameDay" style={{fontSize: '12px', color: '#8F054D'}}>See All Items</a>
+                <a href="#" className="ms-3 text-decoration-none fw-medium seeAllItemsSameDay" style={{fontSize: '12px', color: '#8F054D'}}>See All Items</a>
+            </div>
             </div>
             <div className='flex-shrink-0'>
-                <button className='btn position-absolute end-0 me-4 fw-medium'><PiWarningCircle style={{fontSize: '20px'}}/> T & C Apply</button>
+                <button className='btn  fw-medium'><PiWarningCircle style={{fontSize: '20px'}}/> T & C Apply</button>
             </div>
         </div>
 
-        <div className='d-flex overflow-auto mx-auto py-3' style={{width: '1350px'}}>
+        <div className='d-flex overflow-auto mx-auto py-3' style={{width: '1440px'}}>
             <div className='card me-4 border-0 shadow-sm py-3 productsShadows' role='button'style={{minWidth: '250px'}}>
                 <div className='rounded-end-5 start-0 w-75 d-flex position-absolute' style={{backgroundColor: '#FCDBED'}}>
                     <img src={KongaNow} alt="" className='py-1 w-50 ms-2'/>

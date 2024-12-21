@@ -12,7 +12,7 @@ import SpSolarLantern from '../Images/SpSolarLantern.webp'
 const SponsoredProducts = () => {
   return (
     <div>
-      <div className='container- mt-5'>
+      <div className=' mt-5' style={{width:"1440px"}}>
         <h6 className='fw-bolder'>SPONSORED PRODUCTS</h6>
         <hr/>
 
@@ -21,7 +21,7 @@ const SponsoredProducts = () => {
                 <img src={SpJoola} className='card-img-top w-75 mx-auto' alt='...' />
                 <div className='card-body'>
                     <h6 className='card-title'>Joola Foldable Indoor Tabl...</h6>
-                    <h5 className="card-text fw-bold mt-3">₦475,000 <span className='fs-6 fw-light ms-1'>₦</span><span className='fs-6 fw-light text-decoration-line-through'>550,000</span><span className='bg-danger-subtle text-danger fw-medium rounded-3 py-1 ms-4' style={{fontSize: '10px'}}> - 14%</span></h5>
+                    <h5 className="card-text fw-bold mt-3">₦475,000 <span className='fs-6 fw-light ms-1'>₦</span><span className='fs-6 fw-light text-decoration-line-through'>550,000</span><span className='bg-danger-subtle text-danger fw-medium rounded-3 py-1 ms-3' style={{fontSize: '10px'}}> - 14%</span></h5>
                     <p className="card-text"><small className="fw-medium" style={{fontSize: '12px', color: '#33B27B'}}>You save ₦75,000</small></p>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const SponsoredProducts = () => {
                 <img src={Sp5HpHighest} className='card-img-top w-75 mx-auto' alt='...' />
                 <div className='card-body'>
                     <h6 className='card-title'>5hp Highest Standard Com...</h6>
-                    <h5 className="card-text fw-bold mt-3">₦2,882,000 <span className='fs-6 fw-light ms-1'>₦</span><span className='fs-6 fw-light text-decoration-line-through'>3,000,000</span><span className='bg-danger-subtle text-danger fw-medium rounded-3 py-1 ms-1' style={{fontSize: '10px'}}> -4%</span></h5>
+                    <h5 className="card-text fw-bold mt-3">₦2,882,000 <span className='fs-6 fw-light ms-1'>₦</span><span className='fs-6 fw-light text-decoration-line-through'>3,000,000</span><span className='bg-danger-subtle text-danger fw-medium rounded-3 py-1  ms-1' style={{fontSize: '10px'}}> -4%</span></h5>
                     <p className="card-text"><small className="fw-medium" style={{fontSize: '12px', color: '#33B27B'}}>You save ₦118,000</small></p>
                 </div>
             </div>

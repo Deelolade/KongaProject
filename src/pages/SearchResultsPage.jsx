@@ -65,16 +65,16 @@ const SearchResultsPage = () => {
   return (
     <div>
       <Header />
-      <div className='container'>
+      <div className='mx-auto px-3' style={{width:"1440px"}}>
         <div className='row mt-5'>
           <div className='container col-md-2'>
             {/* Category and Filter Sidebar */}
-            <div className="category-sidebar shadow">
-              <h5 data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="false" aria-controls="categoryCollapse" style={{ cursor: 'pointer' }}>
+            <div className="category-sidebar shadow mt-5 w-auto">
+              <h5 data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse" className='pt-3 ps-2' style={{ cursor: 'pointer' }}>
                 Browse Categories
               </h5>
-              <div className="collapse" id="categoryCollapse">
-                <ul className="list-group">
+              <div className="" id="categoryCollaps">
+                <ul className="list-group rounded-0">
                   <li className="list-group-item" onClick={() => handleCategoryFilter("Computer and Accessories")}>
                     <input type="radio" name="category" checked={category === "Computer and Accessories"} readOnly />
                     Computers and Accessories
@@ -94,11 +94,11 @@ const SearchResultsPage = () => {
                 </ul>
               </div>
 
-              <h5 data-bs-toggle="collapse" data-bs-target="#priceCollapse" aria-expanded="false" aria-controls="priceCollapse" style={{ cursor: 'pointer' }} className="mt-4">
+              <h5 data-bs-toggle="collapse " data-bs-target="#priceCollapse" aria-expanded="false" aria-controls="priceCollapse" style={{ cursor: 'pointer' }} className="mt-4 ms-2">
                 Price
               </h5>
-              <div className="collapse" id="priceCollapse">
-                <ul className="list-group">
+              <div className="" id="priceCollapse">
+                <ul className="list-group rounded-0">
                   <li className="list-group-item" onClick={() => handlePriceFilter("low")}>
                     <input type="radio" name="price" checked={priceRange === "low"} readOnly />
                     ₦0 - ₦50,000
@@ -116,9 +116,9 @@ const SearchResultsPage = () => {
             </div>
           </div>
           <div className='col-md-10'>
-            <div className="d-flex justify-content-between align-items-center mb-4">
-            <h2>Search Results for: {query}</h2>
-              <div className='dropdown'>
+            <div className="d-flex justify-content-between align-items-center mb-4 ">
+            {/* <h2>Search Results for: {query}</h2> */}
+              <div className='dropdown ms-auto '>
                 <div className='dropdown-toggle'  data-bs-toggle="dropdown" type="button">
                   Sort By
                 </div>

@@ -36,10 +36,10 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
               </li>
-            </ul> <form className="d-flex mx-3" role="search" onSubmit={handleSubmit}>
-              <input className="form-contro" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            </ul> <form className="d-flex mx-3 justify-content-center align-items-center" role="search" onSubmit={handleSubmit}>
+              <input className="py-3" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
-              <button type="submit"><AiOutlineSearch /> </button>
+              <button type="submit" className='d-flex py-3 justify-content-center align-items-center'><AiOutlineSearch className='' /> </button>
             </form>
 
             <ul>
@@ -61,10 +61,12 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <span className='cart-icon'><Link to="/shoppingcart" className="nav-link d-flex align-items-center position-relative rounded-1 cart-icon" style={{ backgroundColor: '#2D9E6D', color: 'white', padding: '.6rem .4rem' }}>
-              <FaShoppingCart size={20} />
-              <span className="ms-1">My Cart</span>
-              <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', padding: '0.3em 0.4rem', color: 'black' }}>
+            <span className='cart-icon' style={{width:"auto",height:"auto",fontSize:"15px"}}><Link to="/shoppingcart" className="nav-link d-flex align-items-center  justify-content-center rounded-1 cart-icon py-2 px-2" style={{ backgroundColor: '#2D9E6D', color: 'white'}}>
+                <FaShoppingCart size={20} />
+              <span className="ms-1" style={{fontSize:"15px"}}>
+                My Cart
+              </span>
+              <span className="badge bg-white ms-2" style={{ fontSize: '0.9rem', color: 'black' }}>
                 {getTotalItems()}
               </span>
             </Link></span>
