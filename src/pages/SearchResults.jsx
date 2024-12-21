@@ -27,7 +27,7 @@ const SearchResults = ({ products }) => {
         const totalDeduction = price - discountedPrice;
 
         return (
-          <div key={product.id} className="row row-cols-3 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div key={product.id} className="col-lg-4 col-sm-12 col-md-6 mb-4" style={{height:"auto"}}>
             <div className="card border-0 shadow-sm productsShadows">
               <div className="rounded-end-5 start-0 w-75 d-flex position-absolute" style={{ backgroundColor: "#FCDBED" }}>
                 <img src={KongaNow} alt="" className="py-1 w-50 ms-2 mt-0" />
@@ -42,8 +42,8 @@ const SearchResults = ({ products }) => {
                 <span className="text-danger ms-1 bg-danger-subtle fs-9 fw-medium rounded-3"> {"- " + product.discountPercentage}% </span>
                 <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#33B27B' }}>You save ₦{totalDeduction.toLocaleString()}</small></div>
                 <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#ED017F' }}>Same Day Delivery Lagos</small></div>
-                <div className="search-page-button-text text-center" type="button" onClick={() => addToCart(product)}>
-                  <button type="button" className="btn">Add to Cart</button>
+                <div className="search-page-button-text text-center " type="button" onClick={() => addToCart(product)}>
+                  <button type="button" className="btn py-2 w-75 mt-3 mb-2">Add to Cart</button>
                 </div>
               </div>
             </div>

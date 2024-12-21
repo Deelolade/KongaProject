@@ -65,11 +65,11 @@ const SearchResultsPage = () => {
   return (
     <div>
       <Header />
-      <div className='mx-auto px-2' style={{width:"1440px"}}>
+      <div className='mx-auto px-3' style={{width:"1440px"}}>
         <div className='row mt-5'>
           <div className='container col-md-2'>
             {/* Category and Filter Sidebar */}
-            <div className="category-sidebar shadow mt-5 ">
+            <div className="category-sidebar shadow mt-5 w-auto">
               <h5 data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse" className='pt-3 ps-2' style={{ cursor: 'pointer' }}>
                 Browse Categories
               </h5>
