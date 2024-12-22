@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div style={{maxWidth: '1400px'}} className='mx-auto'>
+      <div style={{maxWidth: '1400px', overflowX:"hidden"}} className='mx-auto'>
       <PromoCarousel/>
       <NavbarFour/>
       <TodaysDeals/>
