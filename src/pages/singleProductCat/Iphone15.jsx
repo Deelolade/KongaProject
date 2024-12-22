@@ -35,10 +35,10 @@ const Iphone15 = () => {
     setQuantity(prev => Math.max(prev + change, 1));
   };
   return (
-    <div className="product">
+    <div className="product" style={{overflowX:"hidden" }}>
       <Header />
-      <div className="bg-white pt-5 " style={{ width: "100%", height: "15vh" }}>
-        <div className='path-container mx-auto pt-0 mt-0' style={{ maxWidth: "1440px", backgroundColor: "white" }}>
+      <div className="bg-white " style={{ width: "100vw", height: "15vh",}}>
+        <div className='path-container mx-auto pt-0 mt-0 px-3' style={{ maxWidth: "1440px", backgroundColor: "white" }}>
           <div className='shop-path'>
             <Link className='home-shop-path' to="/">Home</Link>
             <span> <FaChevronRight color='gray' size={10} /> </span>
