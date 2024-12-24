@@ -10,94 +10,106 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="Footer-top text-light  mx-auto d-flex  justify-content-evenly  align-items-center ">
-        <div className="Footer-top-main  text-light mx-auto d-flex  justify-content-evenly align-items-center">
-          <div className=" d-flex justify-content-center align-items-center pt-2 " style={{width:"auto"}}>
-          <div className="Footer-top-logo mb-3 mx-2 ">
-            <IoMdMail />
+
+
+        <div className="Footer-top-main  text-light mx-auto py-4 py-md-0 py-lg-0 d-flex row justify-content-evenly align-items-center">
+          <div className=" d-flex justify-content-center mx-md-auto col-12 col-md-6 col-lg-2 align-items-center pt-2 me-5 me-sm-0 pe-4 pe-sm-0 " style={{ width: "auto" }}>
+            <div className="Footer-top-logo mb-3 mx-2 ">
+              <IoMdMail />
+            </div>
+            <div className='Footer-top-text '>
+              <a href="#"><h3 className='Footer-text '>Email Support</h3> <p>help@konga.com</p></a>
+            </div>
           </div>
-          <div className='Footer-top-text  '>
-            <a href="#"><h3 className='Footer-text '>Email Support</h3> <p>help@konga.com</p></a>
+          <div className=" d-flex justify-content-center mx-auto col-12 col-md-6 col-lg-2 align-items-center pt-2" style={{ width: "auto" }}>
+            <div className="Footer-top-logo mb-3 mx-2 ">
+              <FaPhoneAlt />
+            </div>
+            <div className='Footer-top-text '>
+              <a href="#"><h3 className='Footer-text '>Phone Support</h3> <p>0708 063 5700, 0201 888 3435</p></a>
+            </div>
           </div>
+          <div className=" d-flex justify-content-center mx-auto col-12 col-md-6 col-lg-2 align-items-center pt-2" style={{ width: "auto" }}>
+            <div className="Footer-top-logo  mb-3 mx-2">
+              <FaWhatsapp />
+            </div>
+            <div className='Footer-top-text '>
+              <a href="#"><h3 className='Footer-text '> Whatsapp</h3> <p>0907 0038 400, 0809 460 5555</p></a>
+            </div>
           </div>
-          <div className=" d-flex justify-content-center align-items-center pt-2" style={{width:"auto"}}>
-          <div className="Footer-top-logo mb-3 mx-2 ">
-            <FaPhoneAlt />
+          <div className='Footer-top-text mx-auto  d-flex justify-content-center col-12 col-md-6 col-lg-2 align-items-center pt-3 '>
+            <a href="#"><h3 className='Footer-top-text '> Get Latest Deals</h3> <p className="lh-sm">Our best promotions sent to your inbox.</p></a>
           </div>
-          <div className='Footer-top-text '>
-            <a href="#"><h3 className='Footer-text '>Phone Support</h3> <p>0708 063 5700, 0201 888 3435</p></a>
-          </div>
-          </div>
-          <div className=" d-flex justify-content-center align-items-center pt-2" style={{width:"auto"}}>
-          <div className="Footer-top-logo  mb-3 mx-2">
-            <FaWhatsapp />
-          </div>
-          <div className='Footer-top-text '>
-            <a href="#"><h3 className='Footer-text '> Whatsapp</h3> <p>0907 0038 400, 0809 460 5555</p></a>
-          </div>
-          </div>
-          <div className='Footer-top-text   d-flex justify-content-center align-items-center pt-3 '>
-            <a href="#"><h3 className='Footer-top-text '> Get Latest Deals</h3> <p>Our best promotions sent to your inbox.</p></a>
-          </div>
-          <div className="Footer-input  ">
-            <input type="text" placeholder='Email Address' className='Footer-input-area p-2' />
-            <button className=' Footer-button btn mt-1 '><h4>Subscribe</h4></button>
+          <div className="Footer-input col-12 col-md-6 col-lg-3 d-flex ">
+            <div className=" subscribe mx-auto d-flex ">
+              <input type="text" placeholder='Email Address' className='Footer-input-area p-2' />
+              <button className=' Footer-button btn mt-1 '><h4>Subscribe</h4></button>
+
+            </div>
           </div>
         </div>
+
+
+
       </div>
       <div className="Footer-bottom d-flex ">
-        <div className="Footer-main-bottom py-3 px-5 mt-3  ">
-          <div className="d-flex Footer-list">
-            <div className='col'>
-              <ul className='list-unstyled '>
-                <li><a href="#" className='Footer-bottom-head'><h4>About Konga</h4></a></li>
-                <li><a href="#" >Contact Us</a></li>
-                <li><a href="#" >About Us</a></li>
-                <li><a href="#" >Careers</a></li>
-                <li><a href="#" >Our Blog</a></li>
-                <li><a href="#" >Forum</a></li>
-                <li><a href="#" >Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div className='col'>
-              <ul className='Footer-bottom-list list-unstyled'>
-                <li><a href="#" className='Footer-bottom-head'><h4>Payment</h4></a></li>
-                <li><a href="#" >Konga Pay</a></li>
-                <li><a href="#" >Wallet</a></li>
-                <li><a href="#" >Visa</a></li>
-                <li><a href="#" >Verve</a></li>
-                <li><a href="#" >Mastercard</a></li>
-              </ul>
-            </div>
-            <div className='col'>
-              <ul className='Footer-bottom-list list-unstyled'>
-                <li><a href="#" className='Footer-bottom-head'><h4>Buying On Konga</h4></a></li>
-                <li><a href="#" >Buyer Safety Centre</a></li>
-                <li><a href="#" >FAQs</a></li>
-                <li><a href="#" >Delivery</a></li>
-                <li><a href="#" >Konga Return Policy</a></li>
-                <li><a href="#" >Digital Services</a></li>
-                <li><a href="#" >Bulk Purchase</a></li>
-              </ul>
-            </div>
-            <div className='col'>
-              <ul className='Footer-bottom-list list-unstyled'>
-                <li><a href="#" className='Footer-bottom-head'><h4>More info</h4></a></li>
-                <li><a href="#" >Site Map</a></li>
-                <li><Link to='/track' >Track My Order</Link></li>
-                <li><a href="#" >Privacy Policy</a></li>
-                <li><a href="#" >Authentic Items Policy</a></li>
-              </ul>
-            </div>
-            <div className='col'>
-              <ul className='Footer-bottom-list list-unstyled'>
-                <li><a href="#" className='Footer-bottom-head'><h4>Make Money On Konga</h4></a></li>
-                <li><a href="#">Become A Konga Affiliate</a></li>
-              </ul>
-            </div>
-            <div className='Footer-main-connect'>
-              <div className="Footer-bottom-connect d-flex">
+        <div className="Footer-main-bottom py-3 px-3 px-md-5 mt-3 ">
+          <div className="d-flex Footer-list  mx-auto row">
+            <div className="col-12 col-md-7 col-lg-8 row flex">
 
-                <div className="Footer-bottom-store bg-black d-flex mx-4">
+              <div className='col-12 col-md-3 col-lg-2'>
+                <ul className='list-unstyled '>
+                  <li><a href="#" className='Footer-bottom-head'><h4>About Konga</h4></a></li>
+                  <li><a href="#" >Contact Us</a></li>
+                  <li><a href="#" >About Us</a></li>
+                  <li><a href="#" >Careers</a></li>
+                  <li><a href="#" >Our Blog</a></li>
+                  <li><a href="#" >Forum</a></li>
+                  <li><a href="#" >Terms & Conditions</a></li>
+                </ul>
+              </div>
+
+              <div className='col-12 col-md-4 col-lg-2'>
+                <ul className='Footer-bottom-list list-unstyled'>
+                  <li><a href="#" className='Footer-bottom-head'><h4>Payment</h4></a></li>
+                  <li><a href="#" >Konga Pay</a></li>
+                  <li><a href="#" >Wallet</a></li>
+                  <li><a href="#" >Visa</a></li>
+                  <li><a href="#" >Verve</a></li>
+                  <li><a href="#" >Mastercard</a></li>
+                </ul>
+              </div>
+              <div className='col-12 col-md-5 col-lg-3'>
+                <ul className='Footer-bottom-list list-unstyled'>
+                  <li><a href="#" className='Footer-bottom-head'><h4>Buying On Konga</h4></a></li>
+                  <li><a href="#" >Buyer Safety Centre</a></li>
+                  <li><a href="#" >FAQs</a></li>
+                  <li><a href="#" >Delivery</a></li>
+                  <li><a href="#" >Konga Return Policy</a></li>
+                  <li><a href="#" >Digital Services</a></li>
+                  <li><a href="#" >Bulk Purchase</a></li>
+                </ul>
+              </div>
+              <div className='col-12 col-md-6 col-lg-3'>
+                <ul className='Footer-bottom-list list-unstyled'>
+                  <li><a href="#" className='Footer-bottom-head'><h4>More info</h4></a></li>
+                  <li><a href="#" >Site Map</a></li>
+                  <li><Link to='/track' >Track My Order</Link></li>
+                  <li><a href="#" >Privacy Policy</a></li>
+                  <li><a href="#" >Authentic Items Policy</a></li>
+                </ul>
+              </div>
+              <div className='col-12 col-md-6 col-lg-2'>
+                <ul className='Footer-bottom-list list-unstyled'>
+                  <li><a href="#" className='Footer-bottom-head'><h4>Make Money On Konga</h4></a></li>
+                  <li><a href="#">Become A Konga Affiliate</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className='Footer-main-connect col-12 col-md-5 col-lg-4'>
+              <div className="Footer-bottom-connect d-flex row gap-1">
+
+                <div className="Footer-bottom-store bg-black d-flex  fs-md-6 col-7 col-md-7 col-lg-5">
                   <div className="Footer-store-logo mb-2 me-3">
                     <GrApple />
                   </div>
@@ -107,7 +119,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="Footer-bottom-store bg-black d-flex">
+                <div className="Footer-bottom-store bg-black d-flex fs-md-6 col-7 col-md-7  col-lg-5">
                   <div className="Footer-store-logo mb-2 me-3 ">
                     <BsAndroid2 />
                   </div>
@@ -117,13 +129,13 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="Footer-connect mt-3 ms-4">
+              <div className="Footer-connect mt-3 ms-sm-4 ms-0">
                 <h4>Connect with us</h4>
                 <div className="Footer-social d-flex">
-                  <a href="#" className='social-icon me-3'><FaFacebookF /></a>
-                  <a href="#" className='social-icon me-3'><BsTwitterX /></a>
-                  <a href="#" className='social-icon me-3'><FaInstagram /></a>
-                  <a href="#" className='social-icon me-3'><BsYoutube /></a>
+                  <a href="#" className='social-icon me-sm-3 me-0'><FaFacebookF /></a>
+                  <a href="#" className='social-icon me-sm-3 me-0'><BsTwitterX /></a>
+                  <a href="#" className='social-icon me-sm-3 me-0'><FaInstagram /></a>
+                  <a href="#" className='social-icon me-sm-3 me-0'><BsYoutube /></a>
                 </div>
 
               </div>
