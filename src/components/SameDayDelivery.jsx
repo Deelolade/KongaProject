@@ -15,7 +15,7 @@ const SameDayDelivery = () => {
   return (
     <div>
       <div className=' mt-5' style={{width:"1440px"}}>
-        <div className='sameDayDeliveryHeading rounded-top py-3 px-3 text-dark d-flex align-items-center justify-content-between'>
+        <div className='sameDayDeliveryHeading rounded-2 mx-md-1 py-3 px-3 text-dark d-flex align-items-center justify-content-between'>
             <div className="flex-shrink-0 d-flex">
                 <h5 className="h4 ms-3 fw-bold my-auto">Same Day Delivery (KongaNow)</h5>
             <div className="flex-shrink-0">

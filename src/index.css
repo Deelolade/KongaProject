@@ -300,7 +300,7 @@
 }
 
 .form-body {
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
   width: 100vw;
 }
 
@@ -507,7 +507,8 @@
 .sameDayDeliveryHeading {
   background-color: #FFE9E9;
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .sameDayDeliveryHeading button {
@@ -1294,15 +1295,6 @@ input:focus {
   }
 }
 
-/* 
-.NavbarTwo-hover-item{
-  background-color: white;
-  height: 80vh;
-  width: 70vw;
-  opacity: 100%;
-  margin-left: 17.1vw;
-  overflow-y: auto;
-} */
 
 
 @media (max-width: 375px) {
