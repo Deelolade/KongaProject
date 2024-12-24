@@ -63,21 +63,19 @@ const PromoCarousel = () => {
             </div>
           </div>
           <div className='col-xl-4'>
-            <div className='promoCarouselAdBar'>
-              <div className='row mb-3'>
-                <div className='col-xl-6'>
+            <div className='promoCarouselAdBar '>
+              <div className='row mb-3 ms-auto my-md-3 my-lg-2'>
+                <div className='col-xl-6 col-md-3'>
                   <a href="#"><img src={CeraVe} className='w-100 rounded' alt='CeraVe' style={{ height: '23.7vh' }} /></a>
                 </div>
-                <div className='col-xl-6'>
+                <div className='col-xl-6 col-md-3'>
                   <a href="https://xclusiveplus.accessbankplc.com/xclusiveplus" target="_blank" rel="noopener noreferrer"><img src={AccessPlus} className='w-100 rounded' alt='AccessPlus' style={{ height: '23.7vh' }} /></a>
                 </div>
-              </div>
 
-              <div className='row'>
-                <div className='col-xl-6'>
+                <div className='col-xl-6 col-md-3 mt-lg-2'>
                   <a href="#"><img src={BulkDeals} className='w-100 rounded' alt='' style={{ height: '23.7vh' }} /></a>
                 </div>
-                <div className='col-xl-6'>
+                <div className='col-xl-6 col-md-3 mt-lg-2'>
                   <a href="https://www.kongapay.com/" target="_blank" rel="noopener noreferrer"><img src={KongaApp} className='w-100 rounded' alt='' style={{ height: '23.7vh' }} /></a>
                 </div>
               </div>

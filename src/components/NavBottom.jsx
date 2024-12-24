@@ -29,10 +29,10 @@ const NavBottom = () => {
 
             {Computers && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover ">
-                    <div className="NavbarTwo-hover-item  mx-auto d-flex" onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >
-                        <div className="NavbarTwo-hover-list p-4 ">
+                    <div className="NavbarTwo-hover-item  mx-auto row d-flex" onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >
+                        <div className="NavbarTwo-hover-list p-4 pt-0 col-lg-7 col-md-7 ">
                             <div className="row NavbarTwo-hover-item-text ">
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Desktop and Monitors</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">CPUs</a></li>
@@ -42,7 +42,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Servers</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-3 mt-3">
                                     <h6 className="dropdown-header fw-bold">Networking</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Routers</a></li>
@@ -51,7 +51,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Access Points</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-4 mt-3">
                                     <h6 className="dropdown-header fw-bold">Storage Devices</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Hard Drives</a></li>
@@ -60,7 +60,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Memory Cards</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-4 mt-5">
                                     <h6 className="dropdown-header fw-bold">Storage Devices</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Hard Drives</a></li>
@@ -69,7 +69,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Memory Cards</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-4 mt-5">
                                     <h6 className="dropdown-header fw-bold">Storage Devices</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">SSDs</a></li>
@@ -78,7 +78,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Hard Drives</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-4 mt-5">
                                     <h6 className="dropdown-header fw-bold">Computing Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Computer Peripherals</a></li>
@@ -86,7 +86,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Laptop & Desktop Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-6 mt-5">
                                     <h6 className="dropdown-header fw-bold">Storage Devices</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Printers, Scanners & Accessories</a></li>
@@ -95,7 +95,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Inks, Toners & Cartridges</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-6 mt-5">
                                     <h6 className="dropdown-header fw-bold">Projectors & Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Video Projectors</a></li>
@@ -109,7 +109,7 @@ const NavBottom = () => {
                                     </ul>
                                 </div>
 
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-4 mt-5">
                                     <h6 className="dropdown-header fw-bold">Wifi & Networking</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Switches</a></li>
@@ -121,7 +121,7 @@ const NavBottom = () => {
 
                             </div>
                         </div>
-                        <div className="NavbarTwo-hover-item-image p-4 mt-5 pe-5">
+                        <div className="NavbarTwo-hover-item-image p-4  col-lg-5 col-md-5">
                             <img src={computers} alt="" />
                         </div>
                     </div>
@@ -129,17 +129,17 @@ const NavBottom = () => {
             )}
             {Phones && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover">
-                    <div className="NavbarTwo-hover-item d-flex justify-content-between " onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >
-                        <div className="NavbarTwo-hover-list p-5 ">
-                            <div className="NavbarTwo-hover-item-text row" style={{width:"100%"}}>
-                                <div className="col-lg-4 mt-3">
+                    <div className="NavbarTwo-hover-item  mx-auto d-flex justify-content-between " onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >
+                        <div className="NavbarTwo-hover-list p-4 pt-0 col-lg-7 col-md-7 ">
+                            <div className="NavbarTwo-hover-item-text row gap-2" >
+                                <div className="col-lg-4 col-md-3 mt-3">
                                     <h6 className="dropdown-header fw-bold">Mobile Phones</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Smartphones</a></li>
                                         <li><a href="#" className="dropdown-item">Feature Phones</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-6 mt-3">
                                     <h6 className="dropdown-header fw-bold">Mobile Phone Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Cables</a></li>
@@ -152,7 +152,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Batteries</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3 me-4">
+                                <div className="col-lg-4 col-md-2 mt-3 ">
                                     <h6 className="dropdown-header fw-bold">Tablets</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Android</a></li>
@@ -161,14 +161,14 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Other OS&#39;</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Tablet Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Cases & Covers</a></li>
                                         <li><a href="#" className="dropdown-item">Holders & Stands</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5 me-4">
+                                <div className="col-lg-4 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Other Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Shop By Price</a></li>
@@ -181,7 +181,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">60,000 & Above</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-5">
+                                <div className="col-lg-4 col-md-4 mt-5">
                                     <h6 className="dropdown-header fw-bold">Desk, Radio & Intercom Phones</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Other Brands</a></li>
@@ -194,7 +194,7 @@ const NavBottom = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="NavbarTwo-hover-item-image p-4 pe-5">
+                        <div className="NavbarTwo-hover-item-image p-4  col-lg-5 col-md-5">
                             <img src={phones} alt="" />
                         </div>
                     </div>
@@ -204,10 +204,10 @@ const NavBottom = () => {
 
             {Electronics && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover">
-                    <div className="NavbarTwo-hover-item d-flex" onMouseEnter={() => setElectronics(true)} onMouseLeave={() => setElectronics(false)} >
-                        <div className="NavbarTwo-hover-list p-4 ">
-                            <div className="row NavbarTwo-hover-item-text ">
-                                <div className="col-lg-3 mt-3">
+                    <div className="NavbarTwo-hover-item  mx-auto d-flex" onMouseEnter={() => setElectronics(true)} onMouseLeave={() => setElectronics(false)} >
+                        <div className="NavbarTwo-hover-list p-4 pt-0 col-lg-7 col-md-7 ">
+                            <div className="row NavbarTwo-hover-item-text gap-2 ">
+                                <div className="col-lg-3 col-md-5  mt-3">
                                     <h6 className="dropdown-header fw-bold">Televisions</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Smart TVs</a></li>
@@ -217,14 +217,14 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Plasma TVs</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-5 mt-3">
+                                <div className="col-lg-5 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">DVD Players and Recorders</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">DVD Players</a></li>
                                         <li><a href="#" className="dropdown-item">DVD Recorders</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className="col-lg-3 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Cameras</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Digital Cameras</a></li>
@@ -234,7 +234,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">CCTV Cameras</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className="col-lg-3 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">TV Audio</a></li>
@@ -244,7 +244,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Other Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-5 mt-3">
+                                <div className="col-lg-5 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Games and Consoles</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">PS4</a></li>
@@ -257,7 +257,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Nintendo 3DS</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 col-md-5 mt-3">
                                     <h6 className="dropdown-header fw-bold">Car & Vehicle Electronics</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Computer Peripherals</a></li>
@@ -269,7 +269,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Car Diagnostics</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-6 mt-3">
                                     <h6 className="dropdown-header fw-bold">Wearable Technology</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Activity Trackers</a></li>
@@ -284,7 +284,7 @@ const NavBottom = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="NavbarTwo-hover-item-image p-4 mt-5 pe-5">
+                        <div className="NavbarTwo-hover-item-image p-4 col-lg-5 col-md-5">
                             <img src={electronics} alt="" />
                         </div>
                     </div>
@@ -295,10 +295,10 @@ const NavBottom = () => {
 
             {Fashion && ( // Conditional rendering based on state
                 <div className="NavbarTwo-hover">
-                    <div className="NavbarTwo-hover-item d-flex" onMouseEnter={() => setFashion(true)} onMouseLeave={() => setFashion(false)} >
-                        <div className="NavbarTwo-hover-list p-4 ">
+                    <div className="NavbarTwo-hover-item row mx-auto d-flex" onMouseEnter={() => setFashion(true)} onMouseLeave={() => setFashion(false)} >
+                        <div className="NavbarTwo-hover-list  p-4 pt-0 col-lg-7 col-md-7 ">
                             <div className="row NavbarTwo-hover-item-text ">
-                                <div className="col-lg-3 mt-3">
+                                <div className="col-lg-3 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Women&#39;s Wear</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Dresses</a></li>
@@ -312,7 +312,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Ready to Wear</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className="col-lg-3 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Women&#39;s Shoes</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Ballerinas & Flats</a></li>
@@ -323,7 +323,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Shoes & Bags</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-3 mt-3">
+                                <div className="col-lg-3 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Women&#39;s Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Bags</a></li>
@@ -333,7 +333,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Hats & Scarves</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Men&#39;s Wear</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Shirts</a></li>
@@ -347,7 +347,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Traditional Wear</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Men&#39;s Shoes</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Casual Shoes</a></li>
@@ -356,7 +356,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Shoe Care & Accessories</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Men&#39;s Accessories</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Belts & Wallets</a></li>
@@ -367,7 +367,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Ties & Cufflinks</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Watches</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Men&#39;s Watches</a></li>
@@ -375,7 +375,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Unisex Watches</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-6">
                                     <h6 className="dropdown-header fw-bold">Style Finder for Women</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Monochrome</a></li>
@@ -386,7 +386,7 @@ const NavBottom = () => {
                                         <li><a href="#" className="dropdown-item">Red Hot</a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 mt-3">
+                                <div className="col-lg-4 mt-3 col-md-4">
                                     <h6 className="dropdown-header fw-bold">Style Finder for Men</h6>
                                     <ul className="list-unstyled">
                                         <li><a href="#" className="dropdown-item">Monochrome</a></li>
@@ -398,7 +398,7 @@ const NavBottom = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="NavbarTwo-hover-item-image p-4 mt-5 pe-5">
+                        <div className="NavbarTwo-hover-item-image p-4  col-lg-5 col-md-5">
                             <img src={fashion} alt="" />
                         </div>
                     </div>
