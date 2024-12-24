@@ -51,8 +51,8 @@ const TodaysDeals = () => {
                 </div>
 
                 <div className='container-fluid mt-2'>
-                    <div className='row'>
-                        <div className='col-xl-4'>
+                    <div className='row mx-auto'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">
@@ -69,7 +69,7 @@ const TodaysDeals = () => {
                             </div>
                         </div>
 
-                        <div className='col-xl-4'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">
@@ -86,7 +86,7 @@ const TodaysDeals = () => {
                             </div>
                         </div>
 
-                        <div className='col-xl-4'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">
@@ -103,7 +103,7 @@ const TodaysDeals = () => {
                             </div>
                         </div>
 
-                        <div className='col-xl-4'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">
@@ -120,7 +120,7 @@ const TodaysDeals = () => {
                             </div>
                         </div>
 
-                        <div className='col-xl-4'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">
@@ -137,7 +137,7 @@ const TodaysDeals = () => {
                             </div>
                         </div>
 
-                        <div className='col-xl-4'>
+                        <div className='col-xl-4 col-md-6'>
                             <div className="card mb-3 border border-0 shadow-sm">
                                 <div className="row g-0 productsShadows" role='button'>
                                     <div className="col-md-4">

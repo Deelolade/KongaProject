@@ -12,10 +12,9 @@ import SpSolarLantern from '../Images/SpSolarLantern.webp'
 const SponsoredProducts = () => {
   return (
     <div>
-      <div className=' mt-5' style={{width:"1440px"}}>
-        <h6 className='fw-bolder'>SPONSORED PRODUCTS</h6>
+      <div className=' mt-5 p-3' style={{width:"1440px"}}>
+        <h6 className='fw-bolder ms-3'>SPONSORED PRODUCTS</h6>
         <hr/>
-
         <div className='d-flex overflow-auto mx-auto py-3' style={{maxWidth: '1440px'}}>
             <div className='card me-4 border-0 shadow-sm py-3 productsShadows' style={{minWidth: '250px'}} role='button'>
                 <img src={SpJoola} className='card-img-top w-75 mx-auto' alt='...' />
