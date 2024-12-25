@@ -27,7 +27,7 @@ const SearchResults = ({ products }) => {
         const totalDeduction = price - discountedPrice;
 
         return (
-          <div key={product.id} className="col-lg-4 col-sm-12 col-md-6 mb-4" style={{height:"auto"}}>
+          <div key={product.id} className="col-lg-4 col-sm-12 col-md-6 mb-4" style={{height:"auto",overflowY:"auto"}}>
             <div className="card border-0 shadow-sm productsShadows">
               <div className="rounded-end-5 start-0 w-75 d-flex position-absolute" style={{ backgroundColor: "#FCDBED" }}>
                 <img src={KongaNow} alt="" className="py-1 w-50 ms-2 mt-0" />
