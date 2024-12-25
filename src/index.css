@@ -12,6 +12,7 @@
   background-color: #ed017f;
   height: 8vh;
   width: 100%;
+  top: 0;
   justify-content: space-evenly;
 }
 
@@ -143,6 +144,14 @@
   background-color: #2E2E2E;
   height: auto;
   width: 1440px;
+}
+
+.Logo {
+  max-width: 150px; /* or adjust to your preference */
+  height: auto;
+}
+.navbar-toggler{
+  right: 30px;
 }
 
 .Footer-top-logo {
@@ -738,7 +747,8 @@
 
 .NavbarTwo-main {
   width: 100%;
-  height: 4vh;
+  height: auto;
+  /* height: 4vh; */
   margin: auto;
   background-color: #94004F;
   color: #fff;
@@ -765,8 +775,8 @@
 
 }
 
-.NavbarTwo-main-list li {
-  line-height: 8vh;
+.NavbarTwo-main-list  {
+  /* line-height: 8vh; */
   font-size: 13px;
   text-decoration: none;
   font-weight: bold;
@@ -775,7 +785,7 @@
   text-align: center;
 }
 
-.NavbarTwo-main li :hover {
+.NavbarTwo-main-list:hover {
   color: #000;
   background-color: #fff;
   transition: ease-in-out .3s;
@@ -794,7 +804,7 @@
 }
 
 .NavbarTwo-hover {
-  top: 12vh;
+  top: auto;
   position: absolute;
   background-color: #000000d3;
   width: 100%;
@@ -804,7 +814,7 @@
 
 .NavbarTwo-hover-item {
   background-color: white;
-  height: 80vh;
+  /* height: 80vh; */
   width: 70vw;
   opacity: 100%;
   margin-left: 17.1vw;
@@ -978,6 +988,7 @@ input:focus {
   margin-top: 30px;
   margin-left: 30px;
   width: 1440px;
+  overflow-x: hidden;
 
 }
 
@@ -1254,14 +1265,13 @@ input:focus {
   width: 100%;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1000px) {
   .Logo {
     display: none;
   }
 
   .navbar {
     max-width: 100%;
-    height: 6vh;
     margin-top: 0;
   }
 
@@ -1283,7 +1293,7 @@ input:focus {
   }
 
   .NavbarTwo-hover {
-    top: 9.9vh;
+    top: auto;
     width: 100%;
     height: 100vh;
   }
@@ -1301,7 +1311,7 @@ input:focus {
 }
 .NavbarTwo-main {
   width: 100%;
-  height: 4vh;
+  /* height: 4vh; */
   margin: auto;
   background-color: #94004F;
   color: #fff;
@@ -1314,44 +1324,25 @@ input:focus {
 
 .NavbarTwo-main a {
   line-height: 4vh;
-  font-size: 14px;
+  font-size: 0.7rem;
   text-decoration: none;
   color: #fff;
   list-style: none;
   text-align: center;
-  padding: 10px 30px;
+  padding:  30px;
 
 }
-.NavbarTwo-main-list li {
-  line-height: 8vh;
-  font-size: 13px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  list-style: none;
-  text-align: center;
-}
+
 
 .NavbarTwo-main li :hover {
   color: #000;
   background-color: #fff;
   transition: ease-in-out .3s;
 }
-
 }
 
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .Footer-social a {
     width: 40px;
   }
@@ -1365,9 +1356,52 @@ input:focus {
     padding: 0 5px;
   }
   .seeAllItemsSameDay{
+    display: block;
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .main-nav{
+    display: flex;
+  }
+  .Logo{
     display: none;
   }
+  .NavbarTwo-main-list{
+    display: none;
+  }
+  .NavbarTwo{
+    display: none;
+  }
+  .seeAllItems{
+    height: auto;
+  }
+  .seeAllItems:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .NavbarTwo-main-list li {
+    line-height: 4vh;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+
+@media  (max-width: 600px) {
+  .navbar{
+    height: auto;
+  }
+  .Logo{
+    display: block;
+  }
+  .collapse form{
+    width: 100vw;
+  }
   
-
-
 }

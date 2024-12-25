@@ -66,8 +66,8 @@ const SearchResultsPage = () => {
     <div>
       <Header />
       <div className='mx-auto px-3' style={{width:"1440px"}}>
-        <div className='row mt-5'>
-          <div className='container col-md-2'>
+        <div className='row mt-0 mt-sm-5'>
+          <div className=' col-md-4 col-lg-3 col-8'>
             {/* Category and Filter Sidebar */}
             <div className="category-sidebar shadow mt-5 w-auto">
               <h5 data-bs-toggle="collapse" data-bs-target="#categoryCollapse" aria-expanded="true" aria-controls="categoryCollapse" className='pt-3 ps-2' style={{ cursor: 'pointer' }}>
@@ -115,7 +115,7 @@ const SearchResultsPage = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-10'>
+          <div className='col-md-8 col-lg-9'>
             <div className="d-flex justify-content-between align-items-center mb-4 ">
             {/* <h2>Search Results for: {query}</h2> */}
               <div className='dropdown ms-auto '>
@@ -135,7 +135,9 @@ const SearchResultsPage = () => {
                 </div>
               </div>
             </div>
-            <SearchResults products={filteredProducts} />
+            <div className="" style={{overflowY:"auto"}}>
+            <SearchResults products={filteredProducts}  />
+            </div>
           </div>
         </div>
       </div>

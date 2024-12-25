@@ -14,13 +14,13 @@ const NavBottom = () => {
             <nav className='NavbarTwo ' >
                 <ul className='d-flex NavbarTwo-main justify-content-evenly' >
                     <li className="px-0"><a href="" className='NavbarTwo-main-list fw-bolder'>  All Categories< GiHamburgerMenu className="NavbarTwo-icon ms-2 text-light" /> </a></li>
-                    <li><a href="" className='NavbarTwo-main-list px-3' onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >Computer and Accessories</a>
+                    <li><a href="" className='NavbarTwo-main-list ' onMouseEnter={() => setComputers(true)} onMouseLeave={() => setComputers(false)} >Computer and Accessories</a>
                     </li>
-                    <li><a href="" className='NavbarTwo-main-list px-3' onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >Phone and Tablet</a>
+                    <li><a href="" className='NavbarTwo-main-list ' onMouseEnter={() => setPhones(true)} onMouseLeave={() => setPhones(false)} >Phone and Tablet</a>
                     </li>
-                    <li><a href="" className='NavbarTwo-main-list px-3' onMouseEnter={() => setElectronics(true)} onMouseLeave={() => setElectronics(false)} >Electronics</a>
+                    <li><a href="" className='NavbarTwo-main-list ' onMouseEnter={() => setElectronics(true)} onMouseLeave={() => setElectronics(false)} >Electronics</a>
                     </li>
-                    <li><a href="" className='NavbarTwo-main-list px-3' onMouseEnter={() => setFashion(true)} onMouseLeave={() => setFashion(false)} >Konga Fashion</a>
+                    <li><a href="" className='NavbarTwo-main-list ' onMouseEnter={() => setFashion(true)} onMouseLeave={() => setFashion(false)} >Konga Fashion</a>
                     </li>
                 </ul>
             </nav>

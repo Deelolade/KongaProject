@@ -16,11 +16,9 @@ const TodaysDeals = () => {
         <div>
             <div className='container-fluid mt-5'>
                 <div className='todaysDealsHeading rounded-top py-1 text-white d-flex align-items-center justify-content-between'>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 d-flex justify-content-center align-items-center w-35 ">
                         <h4 className="h4 ms-3 fw-bolder fs-2">Today&#39;s Deals</h4>
-                    </div>
-                    <div className="flex-shrink-0" role="button">
-                        <Link to="/search" className="text-white ms-5 text-decoration-none position-absolute top-0 mt-2 fw-medium seeAllItems" style={{ fontSize: '12px' }}>See All Items</Link>
+                        <Link to="/search" className="text-white text-decoration-none  fw-medium seeAllItems ms-5" style={{ fontSize: '12px' }}>See All Items</Link>
                     </div>
                     <div className="curvedIcons d-none d-md-flex faded-icons flex-grow-1 justify-content-around">
                         <CiMobile1 className='position-absolute start-0' />
