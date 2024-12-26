@@ -560,13 +560,13 @@
 }
 
 .main-single-product {
-  width: auto;
+  width: 70%;
   /* height: 100vh; */
   background-color: #fff;
 }
 
 .side-product {
-  width: auto;
+  width: 30%;
 }
 
 .side-product-one {
@@ -1330,14 +1330,23 @@ input:focus {
   list-style: none;
   text-align: center;
   padding:  30px;
-
 }
-
-
 .NavbarTwo-main li :hover {
   color: #000;
   background-color: #fff;
   transition: ease-in-out .3s;
+}
+.Single-product{
+  width: 100%;
+}
+.main-product{
+  width: 100%;
+}
+.main-single-product{
+  width: 70%;
+}
+.side-product{
+  width: 30%;
 }
 }
 
@@ -1413,5 +1422,8 @@ input:focus {
   .shop-text p {
     font-size: 30px;
     font-weight: bold;
+  }
+  .shop-text p{
+    font-size: 24px;
   }
 }
