@@ -623,7 +623,7 @@
 }
 
 .side-product-rule {
-  opacity: 5%;
+  opacity: 10%;
 }
 
 .product-rule {
@@ -1403,5 +1403,15 @@ input:focus {
   .collapse form{
     width: 100vw;
   }
-  
+  .addToCart-love-button{
+    width: 40px;
+  }
+  .single-product-add-button{
+    height: 3rem;
+    max-width: auto;
+  }
+  .shop-text p {
+    font-size: 30px;
+    font-weight: bold;
+  }
 }

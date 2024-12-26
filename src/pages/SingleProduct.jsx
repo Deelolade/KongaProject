@@ -41,9 +41,9 @@ const SingleProduct = () => {
 
 
   return (
-    <div className="" >
+    <div className="" style={{ overflowX:"hidden"}} >
       <Header />
-      <div className='path-container mx-auto' style={{ maxWidth: "1440px", }}>
+      <div className='path-container  px-3 mx-auto' style={{ maxWidth: "1440px", }}>
         <div className='shop-path'>
           <Link className='home-shop-path' to="/">Home</Link>
           <span> <FaChevronRight color='gray' size={10} /> </span>
@@ -54,13 +54,13 @@ const SingleProduct = () => {
           <p>Computers & Accessories</p>
         </div>
       </div>
-      <div className="Single-product mx-auto container-fluid">
-        <div className='main-product mx-auto d-flex'>
-          <div className="main-single-product my-5 mx-2 d-flex " >
-            <div className="product-image m-5 me-3">
-              <img src={product.imageUrl}  />
+      <div className="Single-product mx-auto ">
+        <div className='main-product mx-auto row justify-content-center'>
+          <div className="main-single-product my-1 my-sm-5 mx-sm-2 col-md-6 row d-flex col-sm-6 col-lg-8  " >
+            <div className="product-image justify-content-center m-2 me-3 col-sm-4 col-12 col-md-4 m-md-2 m-sm-2">
+              <img src={product.imageUrl} />
             </div>
-            <div className="product-description p-5 mt-4">
+            <div className="product-description p-3 p-sm-5 p-md-2 mt-4 mt-md-2 col-sm-7 col-md-7  col-12">
               <h1 className="fs-2">{product.nameOfProduct} {product.description}</h1>
               <p className=" lh-1 text-letter-spacing-tight mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Category:</span> {product.category}</p>
               <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Product No:</span> {product.id}</p>
@@ -80,9 +80,9 @@ const SingleProduct = () => {
                 <p className="mb-1 fw-bolder" style={{ color: "#ED017F", }}>07080635700</p>
               </div>
               <hr className="my-1  side-product-rule" />
-              <div className="d-flex my-5">
-                <button className="bg-success single-product-add-button me-5" type="submit" onClick={handleAddToCart} >Add To Cart</button>
-                <div className="d-flex">
+              <div className="d-flex my-5 row gap-">
+                <button className="bg-success col-12  col-sm-6 single-product-add-button me-5" type="submit" onClick={handleAddToCart} >Add To Cart</button>
+                <div className="d-flex col-12 col-sm-4">
                   <div className="addToCart-love-button me-3">
                     <IoMdHeart className=" addToCart-button mt-2 " />
                   </div>
@@ -116,7 +116,7 @@ const SingleProduct = () => {
 
 
           </div>
-          <div className="side-product my-5 mx-3 ms-2">
+          <div className="side-product my-5 mx-sm-3 justify-content-center col-md-3  col-lg-3 ">
             <div className="side-product-one mb-2 py-3  rounded-2  border">
               <h1 className='ps-3'>Same Day Delivery Available In:</h1>
               <hr />
