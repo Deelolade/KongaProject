@@ -26,7 +26,7 @@ const App = () => {
           <Route path='/track' element={<TrackOrder />} />
           <Route path='/search' element={<SearchResultsPage />} />
           <Route path='/product/:id' element={<SingleProduct />} />
-          <Route path='*' element={<h1>PAGE NOT FOUND ....</h1>} />
+          <Route path='*' element={<ShoppingCart />} />
         </Routes>
       </CartProvider>
     </Router>

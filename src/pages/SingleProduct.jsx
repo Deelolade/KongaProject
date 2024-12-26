@@ -41,7 +41,7 @@ const SingleProduct = () => {
 
 
   return (
-    <div className="" style={{ overflowX:"hidden"}} >
+    <div className="" style={{ overflowX: "hidden" }} >
       <Header />
       <div className='path-container  px-3 mx-auto' style={{ maxWidth: "1440px", }}>
         <div className='shop-path'>
@@ -50,17 +50,17 @@ const SingleProduct = () => {
           <Link className='shop-shop-path' to="/earring">Computers & Accessories</Link>
 
         </div>
-        <div className='shop-text'>
+        <div className='shop-text  '>
           <p>Computers & Accessories</p>
         </div>
       </div>
-      <div className="Single-product mx-auto ">
-        <div className='main-product mx-auto row justify-content-center'>
-          <div className="main-single-product my-1 my-sm-5 mx-sm-2 col-md-6 row d-flex col-sm-6 col-lg-8  " >
-            <div className="product-image justify-content-center m-2 me-3 col-sm-4 col-12 col-md-4 m-md-2 m-sm-2">
+      <div className="Single-product mx-lg-auto  mx-auto" >
+        <div className='main-product mx-lg-auto mx-auto row justify-content-lg-between' style={{ maxWidth: "1440px" }}>
+          <div className="main-single-product my-1 my-sm-5  mx-sm-2 mx-lg-0 col-md-7 row col-sm-6 col-lg-8  " >
+            <div className="product-image justify-content-center m-2 me-3 col-sm-4 col-12 col-md-4 col-lg-5 m-md-2 m-sm-2 m-lg-0">
               <img src={product.imageUrl} />
             </div>
-            <div className="product-description p-3 p-sm-5 p-md-2 mt-4 mt-md-2 col-sm-7 col-md-7  col-12">
+            <div className="product-description p-3 p-sm-5 p-md-2 mt-4 mt-md-2 col-sm-7 col-md-7 col-lg-7 col-12">
               <h1 className="fs-2">{product.nameOfProduct} {product.description}</h1>
               <p className=" lh-1 text-letter-spacing-tight mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Category:</span> {product.category}</p>
               <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Product No:</span> {product.id}</p>
@@ -82,8 +82,8 @@ const SingleProduct = () => {
               <hr className="my-1  side-product-rule" />
               <div className="d-flex my-5 row gap-">
                 <button className="bg-success col-12  col-sm-6 single-product-add-button me-5" type="submit" onClick={handleAddToCart} >Add To Cart</button>
-                <div className="d-flex col-12 col-sm-4">
-                  <div className="addToCart-love-button me-3">
+                <div className="d-flex col-12 col-sm-4 mt-3 mt-sm-0">
+                  <div className="addToCart-love-button me-3 ">
                     <IoMdHeart className=" addToCart-button mt-2 " />
                   </div>
                   <p className="mt-2" style={{ fontSize: "12px" }}>Save For later</p>
@@ -116,7 +116,7 @@ const SingleProduct = () => {
 
 
           </div>
-          <div className="side-product my-5 mx-sm-3 justify-content-center col-md-3  col-lg-3 ">
+          <div className="side-product my-5 mx-sm-3 mx-md-0 justify-content-center col-md-4 col-12  col-lg-4 ">
             <div className="side-product-one mb-2 py-3  rounded-2  border">
               <h1 className='ps-3'>Same Day Delivery Available In:</h1>
               <hr />
@@ -162,9 +162,9 @@ const SingleProduct = () => {
               </div>
             </div>
             <div className="side-product-three  rounded-2 py-3 rounded-2">
-              <div className="d-flex ">
-                <h1 className='ps-3 me-5 mt-2'>Seller Information</h1>
-                <div className="ms-5 px-1 py-2 rounded-2" style={{ backgroundColor: "#D9CEF4", fontSize: "12px" }}> View Merchant Store</div>
+              <div className="d-flex justify-content-between align-items-center px-2">
+                <h1 className='pt-2 '>Seller Information</h1>
+                <div className=" px-1 py-2 rounded-2" style={{ backgroundColor: "#D9CEF4", fontSize: "12px" }}> View Merchant Store</div>
               </div>
               <hr className='mb-2' />
               <div className=" px-3">
@@ -210,19 +210,22 @@ const SingleProduct = () => {
           </div>
         </div>
 
-        <div className="bottom-product mx-auto p-4 ps-3  shadow-5">
-          <div className="d-flex">
-            <h5 className="me-4 fw-bolder" style={{ color: "#9A0052" }}>Seamless Shopping Experience</h5>
-            <h5 className="me-4 fw-bolder">Unmatched Quality</h5>
-            <h5 className="me-4 fw-bolder">Secure Transactions</h5>
-            <h5 className="me-4 fw-bolder">Customer Service</h5>
+        <div className="bottom-product mx-auto p-4 ps-3   shadow-5">
+          <div className=" row">
+            <div className=" col-sm-3 col-12 col-sm-6 col-lg-3">
+              <h5 className="me-4 fw-bolder" style={{ color: "#9A0052" }}>Seamless Shopping Experience</h5>
+              <ul className="mt-2 ms-4" style={{ color: "#666" }} >
+                <li><p>User-Friendly Interface</p></li>
+                <li><p>Detailed Product Information</p></li>
+                <li><p>Personalized Recommendations</p></li>
+              </ul>
+            </div>
+            <h5 className="me-4 fw-bolder col-sm-2  d-sm-block d-none col-md-5 col-lg-2">Unmatched Quality</h5>
+            <h5 className="me-4 fw-bolder col-sm-2  d-sm-block d-none d-md-none d-lg-block">Secure Transactions</h5>
+            <h5 className="me-4 fw-bolder col-sm-2  d-sm-block d-none d-md-none d-lg-block">Customer Service</h5>
 
           </div>
-          <ul className="mt-2 ms-4" style={{ color: "#666" }} >
-            <li><p>User-Friendly Interface</p></li>
-            <li><p>Detailed Product Information</p></li>
-            <li><p>Personalized Recommendations</p></li>
-          </ul>
+
         </div>
       </div>
       <Footer />
