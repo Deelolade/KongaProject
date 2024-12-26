@@ -1,13 +1,8 @@
 import KongaNow from "../Images/KongaNow.png";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const SearchResults = ({ products }) => {
-  const navigate = useNavigate(); // Move this outside of the map
-
-  const addToCart = (product) => {
-    const productLink = product.link || product.nameOfProduct.toLowerCase().replace(/\s+/g, '-'); // Fallback to a derived link
-    navigate(`/${productLink}`, { state: { product } });
-  };
 
   return (
     <div className="row">
@@ -42,9 +37,9 @@ const SearchResults = ({ products }) => {
                 <span className="text-danger ms-1 bg-danger-subtle fs-9 fw-medium rounded-3"> {"- " + product.discountPercentage}% </span>
                 <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#33B27B' }}>You save ₦{totalDeduction.toLocaleString()}</small></div>
                 <div className="card-text"><small className="fw-medium" style={{ fontSize: '12px', color: '#ED017F' }}>Same Day Delivery Lagos</small></div>
-                <div className="search-page-button-text text-center " type="button" onClick={() => addToCart(product)}>
+                <Link to={`/product/${product.id}`} className="search-page-button-text w-100 text-center " type="button" onClick={() => addToCart(product)}>
                   <button type="button" className="btn py-2 w-75 mt-3 mb-2">Add to Cart</button>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
