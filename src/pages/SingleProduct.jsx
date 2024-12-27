@@ -56,18 +56,18 @@ const SingleProduct = () => {
       </div>
       <div className="Single-product mx-lg-auto  mx-auto" >
         <div className='main-product mx-lg-auto mx-auto row justify-content-lg-between' style={{ maxWidth: "1440px" }}>
-          <div className="main-single-product my-1 my-sm-5  mx-sm-2 mx-lg-0 col-md-7 row col-sm-6 col-lg-8  " >
-            <div className="product-image justify-content-center m-2 me-3 col-sm-4 col-12 col-md-4 col-lg-5 m-md-2 m-sm-2 m-lg-0">
+          <div className="main-single-product my-1 my-sm-5 mx-sm-2 mx-md-0 mx-lg-0 col-md-8 row col-sm-6 col-lg-8  " >
+            <div className="product-image justify-content-center m-2 me-3 col-sm-4 col-12 col-md-5 col-lg-5 m-md-0 m-sm-2 m-lg-0">
               <img src={product.imageUrl} />
             </div>
-            <div className="product-description p-3 p-sm-5 p-md-2 mt-4 mt-md-2 col-sm-7 col-md-7 col-lg-7 col-12">
+            <div className="product-description  p-3 p-sm-5 p-md-0 mt-4 mt-md-2 col-sm-7 col-md-7 col-lg-7 col-12">
               <h1 className="fs-2">{product.nameOfProduct} {product.description}</h1>
               <p className=" lh-1 text-letter-spacing-tight mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Category:</span> {product.category}</p>
               <p className=" lh-1 text-letter-spacing-tigh mt-3" style={{ fontSize: "12px" }}> <span style={{ color: "#9b9b9b", fontSize: "12px" }}>Product No:</span> {product.id}</p>
               <hr className="my-1  side-product-rule" />
               <h1 className="my-4 fw-bold">#{product.price}</h1>
               <hr className="my-1  side-product-rule" />
-              <div className="product-counter d-flex  mt-5">
+              <div className="product-counter d-flex  mt-5 mx-auto">
                 <p className="me-3 ">Quantity: </p>
                 <div className="product-count d-flex">
                   <button className="product-package-button fs-2 pb-1" onClick={() => handleQuantityChange(-1)}>-</button>
@@ -80,9 +80,9 @@ const SingleProduct = () => {
                 <p className="mb-1 fw-bolder" style={{ color: "#ED017F", }}>07080635700</p>
               </div>
               <hr className="my-1  side-product-rule" />
-              <div className="d-flex my-5 row gap-">
-                <button className="bg-success col-12  col-sm-6 single-product-add-button me-5" type="submit" onClick={handleAddToCart} >Add To Cart</button>
-                <div className="d-flex col-12 col-sm-4 mt-3 mt-sm-0">
+              <div className="d-flex my-5 row justify-content-between mx-auto">
+                <button className="bg-success col-12 col-sm-6 single-product-add-button " type="submit" onClick={handleAddToCart} >Add To Cart</button>
+                <div className="d-flex col-12 col-sm-6 mt-3 mt-sm-0">
                   <div className="addToCart-love-button me-3 ">
                     <IoMdHeart className=" addToCart-button mt-2 " />
                   </div>
@@ -117,7 +117,7 @@ const SingleProduct = () => {
 
           </div>
           <div className="side-product my-5 mx-sm-3 mx-md-0 justify-content-center col-md-4 col-12  col-lg-4 ">
-            <div className="side-product-one mb-2 py-3  rounded-2  border">
+            <div className="side-product-one mb-2 py-3  rounded-2  border d-md-none d-lg-block">
               <h1 className='ps-3'>Same Day Delivery Available In:</h1>
               <hr />
               <span className='bg-warning p-2 m-2 ms-3 rounded-5 '>Lagos</span>
@@ -130,10 +130,10 @@ const SingleProduct = () => {
                 <div className="side-product-two-logo ms-3 ">
                   <RiTruckLine />
                 </div>
-                <div className="side-product-two-content  ms-3 mb-0 ">
+                <div className="side-product-two-content  ms-3 mb-0 pe-2 pe-md-1 pe-lg-2">
                   <h4 className='fw-bolder fs-6'>Delivery</h4>
                   <p className='lh-sm mb-1'>Estimated delivery time 1-9 business days</p>
-                  <p className='lh-sm mb-2 fs-6'>Express Delivery Available</p>
+                  <p className='lh-sm mb-2'>Express Delivery Available</p>
                   <p className='lh-sm mb-2' ><strong>For Same-Day-Delivery:</strong> Please place your order before 11AM</p>
                   <p className='lh-sm mb-1' ><strong>Next-Day-Delivery:</strong> Orders placed after 11AM will be delievered the next day</p>
                   <p className='lh-sm mb-1' ><strong>Note:</strong> Availability may vary by location</p>
@@ -144,7 +144,7 @@ const SingleProduct = () => {
                 <div className="side-product-two-logo ms-3">
                   <RiShieldStarLine />
                 </div>
-                <div className="side-product-two-content  ms-3">
+                <div className="side-product-two-content  ms-3 pe-2 pe-md-1 pe-lg-2">
                   <h4 className='fs-6'>Return Policy</h4>
                   <h1 className='fw-bolder'>Guaranteed 7-Day Return Policy</h1>
                   <p>For details about return shipping options, please visit - <span style={{ color: "#ED017F" }}>Konga Return Policy</span></p>
