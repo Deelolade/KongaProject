@@ -43,59 +43,67 @@ const ShoppingCart = () => {
                         </Link>
                     </button>
                 </div>
+
                 <section className=' mx-auto ' style={{ maxWidth: '1440px', }}>
                     <div className='p-4'>
+                        <div className='d-flex shopCartContainer row '>
 
-                        <div className='d-flex shopCartContainer '>
-                            <div className='left-shopCart '>
-                                <div>
-                                    <div className='d-flex left-shopCartTop py-2 px-3'>
-                                        <div className='item-details'>
-                                            <span>Items Details</span>
+                            <div className='left-shopCart col-12 col-lg-9 '>
+                                <div className='p-3 orderSummary d-lg-none'>
+                                    <span>Order Summary</span>
+                                    <span>{getTotalItems()} Items</span>
+                                </div>
+                                <div className='left-shopCartTop py-2 px-3 mx-auto  d-flex  justify-content-between gap-2'>
+                                    <div className='item-details  '>
+                                        <span>Items Details</span>
+                                    </div>
+                                    <div className='quantityItem ms-auto mx-auto ps-lg-3'>
+                                        <div className="ms-lg-5 ps-lg-5">
+                                            <span className='ms-lg-5 me-lg-5'>Quantity</span>
+                                            <span className='ms-lg-5 '>Item Price</span>
                                         </div>
-                                        <div className='quantityItem'>
-                                            <span className='me-5'>Quantity</span>
-                                            <span className='ms-5'>Item Price</span>
-                                        </div>
-                                        <div className='action text-end'>
-                                            <span>Action</span>
-                                        </div>
+                                    </div>
+                                    <div className='action'>
+                                        <span>Action</span>
                                     </div>
                                 </div>
                                 {(
                                     cart.map(item => (
-                                        <div key={item.id} className='py-2 px-3 d-flex itemMainContainer'>
-                                            <div className=" " style={{ width: "62rem" }} >
-                                                <div className='d-flex itemContainer ' style={{ width: "62rem" }}>
-                                                    <img src={item.imageUrl} alt={item.name} className='productImg' />
-                                                    <div className='itemName' style={{ width: "32rem" }}>
-                                                        <p className='mb-0 mt-2 fs-6' style={{ fontSize: "13px", }}> Product: 000{item.id}</p>
-                                                        <p style={{ fontSize: "13px" }} className='fw-bold mb-0'>{item.description}</p>
-                                                        <p style={{ fontSize: "13px", color: "#ed017f" }} className='my-0 fw-bold' >Sold by Konga</p>
+                                        <div key={item.id} className='py-2 px-3 px-md-0 px-lg-3 d-flex mx-auto justify-content-between itemMainContainer'>
+                                            <div className=" d-flex  justify-content-evenly" style={{ width: "auto" }} >
+                                                <div className=' itemContainer d-flex  justify-content-between ' style={{ width: "100%",flex:"1" }}>
+                                                    <div className="d-flex itemName ">
+                                                        <img src={item.imageUrl} alt={item.name} className='productImg' />
+                                                        <div className=''>
+                                                            <p className='mb-0  fs-6' style={{ fontSize: "13px", }}> Product: 000{item.id}</p>
+                                                            <p style={{ fontSize: "13px" }} className='fw-bold mb-0'>{item.description}</p>
+                                                            <p style={{ fontSize: "13px", color: "#ed017f" }} className='my-0 fw-bold' >Sold by Konga</p>
+                                                        </div>
                                                     </div>
                                                     <div className='qtyItmCont '>
-                                                        <div className='product-count d-flex mt-3'>
+                                                        <div className='product-count d-flex '>
                                                             <button className='product-package-button fs-2 pb-1' onClick={() => decrement(item.id)}>-</button>
                                                             <button className='product-package-count px-3'>{item.quantity}</button>
                                                             <button className='product-package-button fs-4 pb-1' onClick={() => increment(item.id)}>+</button>
                                                         </div>
-                                                        <div className='itemPriceContainer ps-2  '>
-                                                            <span className='mainPrice '>{(item.price * item.quantity).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                                                            </span>
-                                                            <span className='qtyPrice '>{(item.price).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} X {item.quantity} item(s)</span>
-                                                        </div>
                                                     </div>
-                                                    <div className='removeCont'>
-                                                        <span className='removeClick pe-2' onClick={() => removeFromCart(item.id)}>Remove item</span>
-                                                        <span className='saveClick pe-2'>Save for Later</span>
+                                                    <div className='itemPriceContainer '>
+                                                        <span className='mainPrice '>{(item.price * item.quantity).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                                        </span>
+                                                        <span className='qtyPrice '>{(item.price).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} X {item.quantity} item(s)</span>
                                                     </div>
-                                                </div><hr className='mt-0 mb-0 ' />
+                                                    <div className='removeCont text-lg-end'>
+                                                        <span className='removeClick pe-1' onClick={() => removeFromCart(item.id)}>Remove item</span>
+                                                        <span className='saveClick pe-1'>Save for Later</span>
+                                                    </div>
+                                                </div>
+                                                <hr className='mt-0 mb-0 ' />
                                             </div>
                                         </div>
                                     ))
                                 )}
                             </div>
-                            <div className='right-shopCart shadow rounded'>
+                            <div className='right-shopCart shadow rounded col-3'>
                                 <div className='p-3 orderSummary'>
                                     <span>Order Summary</span>
                                     <span>{getTotalItems()} Items</span>
