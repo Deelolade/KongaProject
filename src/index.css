@@ -147,10 +147,12 @@
 }
 
 .Logo {
-  max-width: 150px; /* or adjust to your preference */
+  max-width: 150px;
+  /* or adjust to your preference */
   height: auto;
 }
-.navbar-toggler{
+
+.navbar-toggler {
   right: 30px;
 }
 
@@ -318,9 +320,11 @@
   background-color: #fff;
   margin: auto;
 }
-.KongaNow{
+
+.KongaNow {
   font-size: 25px;
 }
+
 .form-image-body {
   margin: auto;
   text-align: center;
@@ -775,7 +779,7 @@
 
 }
 
-.NavbarTwo-main-list  {
+.NavbarTwo-main-list {
   /* line-height: 8vh; */
   font-size: 13px;
   text-decoration: none;
@@ -1009,6 +1013,7 @@ input:focus {
   font-weight: bold;
 }
 
+
 .cont-button {
   padding: 9px;
   border: 2px solid #ED017F;
@@ -1025,8 +1030,9 @@ input:focus {
   justify-content: space-between;
 }
 
-.left-shopCart {
+.itemMainContainer {
   width: auto;
+  height: auto;
   background-color: #FFFFff;
 
 }
@@ -1034,12 +1040,12 @@ input:focus {
 .right-shopCart {
   width: auto;
   background-color: white;
-  height: auto;
+  height: 45vh;
 }
 
 .left-shopCartTop {
   width: auto;
-  background-color: #807f7f;
+  background-color: #636464;
   justify-content: flex-start;
 }
 
@@ -1059,6 +1065,14 @@ input:focus {
 }
 
 .orderSummary {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.order-Summary {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -1148,7 +1162,7 @@ input:focus {
 }
 
 .itemName {
-  width: 25vw;
+  width: auto;
   /* background-color: #000; */
   display: flex;
   /* flex-direction: ; */
@@ -1165,8 +1179,8 @@ input:focus {
 .qtyItmCont {
   display: flex;
   width: 9vw;
-  /* background-color: #00f; */
 }
+
 .itemPriceContainer {
   display: flex;
   flex-direction: column;
@@ -1300,49 +1314,88 @@ input:focus {
     width: 100vw;
     opacity: 100%;
   }
-  
-.NavbarTwo {
-  background-color: #94004F;
-  width: 100%;
-}
-.NavbarTwo-main {
-  width: 100%;
-  margin: auto;
-  background-color: #94004F;
-  color: #fff;
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.NavbarTwo-main a {
-  line-height: 4vh;
-  font-size: 0.7rem;
-  text-decoration: none;
-  color: #fff;
-  list-style: none;
-  text-align: center;
-  padding:  30px;
-}
-.NavbarTwo-main li :hover {
-  color: #000;
-  background-color: #fff;
-  transition: ease-in-out .3s;
-}
-.Single-product{
-  width: 100%;
-}
-.main-product{
-  width: 100%;
-}
-.main-single-product{
-  width: 70%;
-}
-.side-product{
-  width: 30%;
-}
+  .NavbarTwo {
+    background-color: #94004F;
+    width: 100%;
+  }
+
+  .NavbarTwo-main {
+    width: 100%;
+    margin: auto;
+    background-color: #94004F;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .NavbarTwo-main a {
+    line-height: 4vh;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .NavbarTwo-main li :hover {
+    color: #000;
+    background-color: #fff;
+    transition: ease-in-out .3s;
+  }
+
+  .Single-product {
+    width: 100%;
+  }
+
+  .main-product {
+    width: 100%;
+  }
+
+  .main-single-product {
+    width: 70%;
+  }
+
+  .side-product {
+    width: 30%;
+  }
+
+  .itemContainer {
+    width: 100%;
+  }
+
+  .itemName {
+    width: 40vw;
+  }
+
+  .itemPriceContainer {
+    width: 15vw;
+  }
+
+  .removeCont {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    align-items: end;
+  }
+
+  .paymentCard {
+    justify-content: center;
+  }
+
+  .payment-card-button {
+    justify-content: center;
+  }
+
+  .tablet-payment {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
@@ -1350,41 +1403,53 @@ input:focus {
   .Footer-social a {
     width: 40px;
   }
-  .sameDayDeliveryHeading{
+
+  .sameDayDeliveryHeading {
     width: 100%;
   }
-  .KongaNow{
+
+  .KongaNow {
     font-size: 18px;
   }
-  .sameDayDeliveryHeading{
+
+  .sameDayDeliveryHeading {
     padding: 0 5px;
   }
-  .seeAllItemsSameDay{
+
+  .seeAllItemsSameDay {
     display: block;
   }
-  .navbar{
+
+  .navbar {
     display: flex;
     justify-content: center;
-    
+
   }
-  .main-nav{
+
+  .main-nav {
     display: flex;
   }
-  .Logo{
+
+  .Logo {
     display: none;
   }
-  .NavbarTwo-main-list{
+
+  .NavbarTwo-main-list {
     display: none;
   }
-  .NavbarTwo{
+
+  .NavbarTwo {
     display: none;
   }
-  .seeAllItems{
+
+  .seeAllItems {
     height: auto;
   }
+
   .seeAllItems:hover {
     border-bottom: 1px solid #fff;
   }
+
   .NavbarTwo-main-list li {
     line-height: 4vh;
     font-size: 12px;
@@ -1397,28 +1462,115 @@ input:focus {
 }
 
 
-@media  (max-width: 600px) {
-  .navbar{
+@media (max-width: 600px) {
+  .navbar {
     height: auto;
   }
-  .Logo{
+
+  .Logo {
     display: block;
   }
-  .collapse form{
+
+  .collapse form {
     width: 100vw;
   }
-  .addToCart-love-button{
+
+  .addToCart-love-button {
     width: 40px;
   }
-  .single-product-add-button{
+
+  .single-product-add-button {
     height: 3rem;
     max-width: auto;
   }
+
   .shop-text p {
     font-size: 30px;
     font-weight: bold;
   }
-  .shop-text p{
+
+  .shop-text p {
     font-size: 24px;
+  }
+
+  .order-Summary {
+    font-size: 13px;
+  }
+
+  .itemContainer {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .itemName {
+    width: 25vw;
+  }
+
+  .itemPriceContainer {
+    width: 45%;
+  }
+
+  .qtyItmCont {
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .removeCont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-count:hover {
+    width: auto;
+  }
+
+  .mainPrice {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4A4A4A;
+  }
+
+  .itemMainContainer {
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .qtyPrice {
+    font-size: 10px;
+    color: #BBBBBB;
+  }
+
+  .removeClick {
+    margin: 10px 0 10px 0;
+    padding: 6px 10px;
+    border: solid #ed017f 2px;
+  }
+
+  .saveClick {
+    margin: 10px 0 10px 0;
+    padding: 6px 10px;
+    border: solid #ed017f 2px;
+  }
+
+  .saveClick:hover {
+    transition: .4s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .removeClick:hover {
+    transition: .4s ease-in-out;
+    border-radius: 5px;
+  }
+
+  .cont-button {
+    padding: 5px;
+  }
+
+  .checkoutButton {
+    font-size: 13px;
+    width: auto;
   }
 }
