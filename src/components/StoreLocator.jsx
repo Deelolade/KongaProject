@@ -35,7 +35,7 @@ const StoreLocator = () => {
         }
     };
     return (
-        < div>
+        < div className='Store-locator'>
             <Header />
             <div className='path-container mx-auto p-3' style={{ maxWidth: "1440px" }}>
                 <div className='shop-path'>

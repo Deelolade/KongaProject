@@ -1044,7 +1044,9 @@ input:focus {
 }
 
 .left-shopCartTop {
-  width: auto;
+  flex-direction: row;
+  display: flex;
+  flex: 1;
   background-color: #636464;
   justify-content: flex-start;
 }
@@ -1274,6 +1276,9 @@ input:focus {
 .store-image {
   width: 100%;
 }
+.Store-locator{
+  overflow-x: hidden;
+}
 
 @media (max-width:1000px) {
   .Logo {
@@ -1369,7 +1374,7 @@ input:focus {
   }
 
   .itemName {
-    width: 40vw;
+    width:60vw;
   }
 
   .itemPriceContainer {
@@ -1395,6 +1400,17 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .quantityItem{
+    width: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .itemContainer{
+    display: flex;
+  }
+  .path-container{
+    padding-left: 20px;
   }
 }
 
@@ -1504,18 +1520,32 @@ input:focus {
   }
 
   .itemName {
-    width: 25vw;
+    width: 100vw;
   }
-
+  .list-quantity{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .removeCont{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   .itemPriceContainer {
     width: 45%;
   }
-
+.Shopping-cart{
+  overflow-x: hidden;
+}
   .qtyItmCont {
     width: 45%;
     flex-direction: column;
   }
-
+.path-container{
+  padding-left: 20px;
+}
   .removeCont {
     width: 100%;
     display: flex;
