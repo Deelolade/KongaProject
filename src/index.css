@@ -687,12 +687,6 @@
   text-decoration: none;
 }
 
-.sell {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-}
-
 .sell img {
   height: 200px;
   width: 200px;
@@ -702,8 +696,7 @@
   font-size: 14px;
   color: #777;
   width: 300px;
-  /* text-align: center; */
-  margin: auto;
+  margin: 0 auto;
 }
 
 .sell-container {
@@ -715,6 +708,11 @@
 .sell h4 {
   font-size: 22px;
   font-weight: bolder;
+}
+.sales{
+  text-align: center;
+  font-weight: bolder;
+
 }
 
 .sales-overall-container {
@@ -1279,7 +1277,23 @@ input:focus {
 .Store-locator{
   overflow-x: hidden;
 }
-
+.Sell-on-Konga{
+  overflow-x: hidden;
+}
+.sale-text-container h2{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.sale-text-container p{
+  font-size: 20px;
+}
+.sales{
+  font-size: 50px;
+  font-weight: bolder;
+}
+.earn-money h1{
+  font-size: 45px;
+}
 @media (max-width:1000px) {
   .Logo {
     display: none;
@@ -1602,5 +1616,17 @@ input:focus {
   .checkoutButton {
     font-size: 13px;
     width: auto;
+  }
+  .sale-text-container h2{
+    font-size: 25px;
+  }
+  .sale-text-container p{
+    font-size: 16px;
+  }
+  .sales{
+    font-size: 25px;
+  }
+  .earn-money h1{
+  font-size: 25px;
   }
 }
