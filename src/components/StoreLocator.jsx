@@ -48,9 +48,9 @@ const StoreLocator = () => {
                     <p>Store Locator</p>
                 </div>
             </div>
-            <div className="header-container pt-5 " style={{ backgroundColor: "#f2f2f2", height: "30vh",width:"auto" }}>
+            <div className="header-container pt-5 " style={{ backgroundColor: "#f2f2f2", height: "30vh", }}>
                 <div style={{ margin: 'auto', padding: '8px', border: '1px solid #ddd', width: 'auto', backgroundColor: "#F8F8F8" }}>
-                    <form className='d-flex' style={{ font: '5px', height: '30px', marginLeft: '10px', margin: '20px' }}>
+                    <form className='d-flex  mx-auto' style={{ font: '5px', height: '30px', marginLeft: '10px', margin: '20px', width: "1000px" }}>
                         <div className="  ">
                             <label htmlFor="state" className='mx-2'>State:</label>
                             <select id="state" value={selectedState} onChange={handleStateChange}>
@@ -73,12 +73,14 @@ const StoreLocator = () => {
                                 ))}
                             </select>
                         </div>
-                        <button type="button" onClick={handleSubmit} className='store-button mx-4 rounded-1 ' >
-                            Apply Selection
-                        </button>
-                        <button type="button" onClick={handleSubmit} className=' store-button rounded-1' >
-                            show All
-                        </button>
+                        <div className="d-flex">
+                            <button type="button" onClick={handleSubmit} className='store-button  mx-3 mx-md-4 rounded-1 ' >
+                                Apply Selection
+                            </button>
+                            <button type="button" onClick={handleSubmit} className=' store-button rounded-1' >
+                                show All
+                            </button>
+                        </div>
                     </form>
                 </div>
                 <div className='ps-3' style={{ margin: 'auto', height: '25px', alignItems: 'center', background: '#E2E2E2', width: '1000px' }}>

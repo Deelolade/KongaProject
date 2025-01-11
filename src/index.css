@@ -728,11 +728,6 @@
   font-weight: bolder;
 }
 
-.store-button:hover {
-  color: #fff;
-  background-color: #ed017f;
-}
-
 .store-button {
   color: #ED017F;
   background-color: #fff;
@@ -741,7 +736,10 @@
   font-size: 14px;
   /* font-weight: bolder; */
 }
-
+.store-button:hover {
+  color: #fff;
+  background-color: #ed017f;
+}
 .NavbarTwo {
   background-color: #94004F;
   width: 100%;
@@ -1629,4 +1627,12 @@ input:focus {
   .earn-money h1{
   font-size: 25px;
   }
+  .store-button {
+    color: #ED017F;
+    background-color: #fff;
+    border: 1px solid #FBA5D0;
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  
 }
