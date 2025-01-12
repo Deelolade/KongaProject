@@ -39,12 +39,12 @@ const Navbar = () => {
                 <Link to='/sellonkonga' className="nav-link " >Sell on Konga</Link>
               </li>
             </ul>
-            <form className="d-flex mx-lg-3 col-12 col-md-4  col-sm-4 col-lg-4 mx-md-1 justify-content-center align-items-center" role="search" onSubmit={handleSubmit}>
+            <form className="d-flex mx-lg-3 col-12 col-md-4  col-sm-4 col-lg-5 mx-md-1 justify-content-center align-items-center" role="search" onSubmit={handleSubmit}>
               <input className="py-3" type="search" placeholder="Search for products,brands and categories..." aria-label="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
               <button type="submit" className='d-flex py-3 justify-content-center align-items-center'><AiOutlineSearch className='' /> </button>
             </form>
             <ul className='col-12 col-sm-2 col-md-2  col-lg-2'>
-              <div className="nav-item dropdown col-6">
+              <div className="nav-item dropdown col-5 mx-2">
                 <Link to="#" className="nav-link dropdown-toggle" id="helpDropdown" role="button">
                   <RiQuestionFill size={20} />
                   Help
@@ -56,11 +56,11 @@ const Navbar = () => {
                   <Link to="#" className="dropdown-item">Konga Return Policy</Link>
                 </div>
               </div>
-              <li className="nav-item col-6 ">
+              <li className="nav-item col-5 ">
                 <Link to='/login' className="nav-link " aria-current="page">Login / SignUp</Link>
               </li>
             </ul>
-            <span className='cart-icon col-12 col-sm-1 col-md-2 col-lg-2' style={{ width: "auto", height: "auto", fontSize: "15px" }}>
+            <span className='cart-icon col-12 col-sm-1 col-md-12 col-lg-2' style={{ width: "auto", height: "auto", fontSize: "15px" }}>
               <Link to="/shoppingcart" className="nav-link d-flex align-items-center  justify-content-center rounded-1 cart-icon py-2 px-2" style={{ backgroundColor: '#2D9E6D', color: 'white' }}>
                 <FaShoppingCart size={20} />
                 <span className="ms-1" style={{ fontSize: "15px" }}>

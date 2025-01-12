@@ -27,7 +27,7 @@
   color: #fff;
   font-size: .8125rem;
   height: 8vh;
-  width: 8rem;
+  /* width: 8rem; */
   display: flex;
   justify-content: center;
   transition: background-color .3s ease-in-out;
@@ -119,7 +119,9 @@
   font-size: .8125rem;
   line-height: 2rem;
 }
-
+.main-nav{
+  width: 1440px;
+}
 .container a {
   text-decoration: none;
   color: white;
@@ -1310,8 +1312,8 @@ input:focus {
   .nav-item {
     width: 100%;
     height: 8vh;
-    width: 6.3rem;
-    padding: 0 20px;
+    /* width: 6.3rem; */
+    /* padding: 0 20px; */
   }
 
   .cart-icon {
@@ -1634,5 +1636,12 @@ input:focus {
     padding: 5px 15px;
     font-size: 10px;
   }
-  
+  .main-nav{
+    width: auto;
+  }
+  .nav-item {
+    width: 100%;
+    height: 8vh;
+    padding: 0 20px;
+  }
 }
